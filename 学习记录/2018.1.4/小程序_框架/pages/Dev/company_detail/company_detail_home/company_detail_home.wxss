@@ -1,0 +1,161 @@
+/* pages/Dev/company_detail/company_detail_home/company_detail_home.wxss */
+
+.view_bg{
+  background: lightgray;
+}
+.part1{
+  margin-top: 0;
+  padding-top: 10rpx;
+  padding-bottom: 60rpx;
+  background: black;
+}
+.part1_shopInfo{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-bottom: 20rpx;
+  border: 1px solid lightgrey;
+  border-radius: 10rpx;
+  background: white;
+}
+.part1_shopInfo_logo{
+  padding-left: 20rpx;
+  padding-top: 30rpx;
+  padding-right: 20rpx;
+}
+.part1_shopInfo_logo_img{
+  width: 100rpx;
+  height: 100rpx;
+  background: blue;
+  border-radius: 50%;
+}
+.part1_shopInfo_titleAndMark{
+  display: flex;
+  flex-direction: column;
+}
+.part1_shopInfo_titleAndMark_title{
+  padding-top: 30rpx;
+  font-size: 13pt;
+}
+.part1_shopInfo_titleAndMark_mark{
+  display: flex;
+  flex-direction: row;
+  padding-top: 30rpx;
+}
+.part1_shopInfo_titleAndMark_mark_img{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 10rpx;
+  background: blue;
+}
+.part1_shopInfo_titleAndMark_mark_content{
+  margin-left: 10rpx;
+  width: 370rpx;
+  font-size: 12pt;
+}
+.part1_shopInfo_line{
+  margin-right: 0rpx;
+  margin-top: 20rpx;
+  margin-bottom: 0rpx;
+  width: 1rpx;
+  background: lightgray;
+}
+.part1_shopInfo_des{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20rpx;
+  width: 130rpx;
+}
+.part1_shopInfo_des_item{
+  margin-top: 20rpx;
+  font-size: 12pt;
+}
+.part1_shopInfo_des_zhiShu{
+  margin-top: 15rpx;
+  font-size: 11pt;
+  color: blue;
+}
+.part1_shopInfo_des_reDu{
+  margin-top: 15rpx;
+  font-size: 11pt;
+  color: red;
+}
+
+.part1_operationForCommpany{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.part1_operationForCommpany_claim{
+  width: 33.33333333333%;
+  flex: 1;
+}
+.part1_operationForCommpany_follow{
+  width: 33.33333333333%;
+  flex: 1;
+}
+.part1_operationForCommpany_share{
+  width: 33.33333333333%;
+  flex: 1;
+}
+.part1_operationForCommpany_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+  background: black;
+  color: orange;
+  font-size: 10pt;
+  width: 150rpx;
+  height: 60rpx;
+  border: 1rpx solid orange;
+  border-radius: 30rpx;
+}
+
+.part1_select{
+  display: flex;
+  flex-direction: row;
+  padding-top: 46rpx;
+}
+.part1_select_overview{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33333%;
+}
+.part1_select_news{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33333%;
+}
+.part1_select_community{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33333%;
+}
+.part1_select_btn{
+  height: 60rpx;
+  color: white;
+  background: black;
+  font-size: 12pt;
+}
+.part1_select_markView{
+  margin-top: 10rpx;
+  width: 80rpx;
+  height: 5rpx;
+  background: white;
+}
+
+.part2{
+  margin-top: -50rpx;
+  padding-bottom: 20rpx;
+}
+

@@ -1,0 +1,34 @@
+
+<!--事件分为冒泡事件和非冒泡事件两种
+    1.冒泡事件：当一个组件上的事件被触发后，该事件会向父节点传递
+    2.非冒泡事件：当一个组件上的事件被触发后，该事件不会向父节点传递  -->
+<!--bind事件绑定不会阻止冒泡事件向上冒泡，catch事件绑定可以阻止冒泡事件向上冒泡
+    如在下边这个例子中，点击 inner view1 会先后调用handleTap3和handleTap2(因为tap事件会冒泡到 middle view 1，而 middle view 1 阻止了 tap 事件冒泡，不再向父节点传递)，点击 middle view 1会触发handleTap2，点击 outer view 1会触发handleTap1。  -->
+<view class='outer' id="outer1" bindtap="handleTap1">
+  outer view 1
+  <view class='middle' id="middle1" catchtap='handleTap2'>
+    middle view 1
+    <view class='inner' id='inner1' bindtap='handleTap3'>
+      inner view 1
+    </view>
+  </view>
+</view>
+
+<!--事件的捕获  
+    触摸类事件支持捕获阶段，捕获阶段位于冒泡阶段之前，且在捕获阶段中事件到达节点的顺序与冒泡阶段的顺序恰好相反
+    需要在捕获阶段监听事件时，可以采用capture-bind、capture-catch关键字，后者将中断捕获阶段和取消冒泡阶段-->
+<!--在下面的代码中，点击 middle view 2 会先后调用handleTap2、handleTap4、handleTap3、handleTap1。  -->
+<view class='outer' id='outer2' bind:touchstart='handleTap1' capture-bind:touchstart="handleTap2">
+  outer view 2
+  <view class='middle' id='middle2' bind:touchstart='handleTap3' capture-bind:touchstart='handleTap4'>
+    middle view 2
+  </view>
+</view>
+
+<!--如果将上面代码中的第一个capture-bind改为capture-catch，将只触发handleTap2。  -->
+ <view class='outer' id='outer3' bind:touchstart='handleTap1' capture-catch:touchstart='handleTap2'>
+  outer view 3
+  <view class='middle' id='middle3' bind:touchstart='handleTap3' capture-bind:touchstart='handleTap4'>
+    middle view 3
+  </view>
+</view> 

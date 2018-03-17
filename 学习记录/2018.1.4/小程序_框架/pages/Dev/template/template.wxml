@@ -1,0 +1,24 @@
+
+<!--添加评论  -->
+<template name = "addComment">
+  <view class='btn_addComment_bg' type = primary>
+    <view wx:if="{{!isShowInput}}">
+      <button class='btn_addComment' style='margin-left:10rpx;margin-right:10rpx;' bindtap='addComment'>点击添加评论</button>
+    </view>
+    <view wx:else>
+      <view class='inputCommentBg'>
+        <input class='input_comment' type='text' focus='input_focus' placeholder='请输入评论' bindinput='bind_input_content'>
+        </input>
+        <button class='btn_sendComment' bindtap='sendComment'>发送</button>
+      </view>
+    </view>
+  </view>
+</template>
+<!--函数  
+  addComment
+  bind_input_content
+  sendComment
+  -->
+<!--数据 
+  isShowInput
+  -->

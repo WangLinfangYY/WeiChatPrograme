@@ -1,0 +1,44 @@
+
+
+/*添加评论  */
+
+.btn_addComment_bg{
+  height: 120rpx;
+  background: whitesmoke;
+  bottom: 0;
+  position: fixed; 
+  width: 100%;
+}
+.btn_addComment{
+  top: 15rpx;
+  left: 20rpx; 
+  right: 100rpx;
+  height: 95rpx; 
+  border-radius: 5rpx;
+  width: 92%;
+}
+.inputCommentBg{
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  margin-right: 20rpx;
+  height: 95rpx;
+}
+.input_comment{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border: 1px solid coral;
+  margin-right: 20rpx;
+  width: 80%;
+  height: 80rpx;
+  border-radius: 10rpx;
+  border-color: lightgrey;
+}
+.btn_sendComment{
+  margin-right: 0;
+  width: 150rpx;
+  height: 80rpx;
+  font-size: 13pt;
+}

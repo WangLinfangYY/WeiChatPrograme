@@ -1,0 +1,96 @@
+<view hidden='{{hidden}}'>
+  <!--公司描述  -->
+  <view class='description'>果小7是一家便利货架提供商，定位于楼宇场景，主要做常温零食和水果，专注于为白领群体提供鲜果服务，微信公众号为B端、C端用户提供水果服务。</view>
+  <!--融资历史  -->
+  <view class='financeHistory'>
+    <view class='financeHistory_title'>融资历史</view>
+    <view class='financeHistory_detail'>
+      <view class='financeHistory_detail_time'>2017-07-12</view>
+      <view class='financeHistory_detail_des'>
+        <view class='financeHistory_detail_des_stageAndMoney'>
+          <view class='financeHistory_detail_des_stageAndMoney_stage'>Pre-A 轮</view>
+          <view class='financeHistory_detail_des_stageAndMoney_money'>数千万人民币</view>
+        </view>
+        <view class='financeHistory_detail_des_from'>·壁声创投</view>
+      </view>
+    </view>
+  </view>
+  <!--公司信息  -->
+  <view class='info'>
+    <view class='info_title'>公司信息</view>
+    <view class='info_content'>
+      <view class='info_content_nameAndContent'>
+        <view class='info_content_nameAndContent_name'>公司名称</view>
+        <view class='info_content_nameAndContent_conent'>杭州几禾科技有限公司</view>
+      </view>
+      <view class='info_content_nameAndContent'>
+        <view class='info_content_nameAndContent_name'>纳税人识别号</view>
+        <view class='info_content_nameAndContent_conent'>21124214NY211241</view>
+      </view>
+      <view class='info_content_nameAndContent'>
+        <view class='info_content_nameAndContent_name'>注册资本</view>
+        <view class='info_content_nameAndContent_conent'>105万元</view>
+      </view>
+      <view class='info_content_nameAndContent'>
+        <view class='info_content_nameAndContent_name'>成立时间</view>
+        <view class='info_content_nameAndContent_conent'>2015-07-14</view>
+      </view>
+      <view class='info_content_nameAndContent'>
+        <view class='info_content_nameAndContent_name'>公司规模</view>
+        <view class='info_content_nameAndContent_conent'>不明确</view>
+      </view>
+    </view>
+  </view>
+  <!--团队  -->
+  <view class='team'>
+    <view class='team_title'>团队</view>
+    <scroll-view scroll-x class='team_content'>
+      <block wx:for="{{[1,2,3,4,5]}}">
+        <view class='team_content_item'>
+          <view class='team_content_item_person'>
+            <image class='team_content_item_person_img'></image>
+            <view class='team_content_item_person_name'>万晓利</view>
+            <view class='team_content_item_person_line'></view>
+            <view class='team_content_item_person_job'>CEO</view>
+          </view>
+          <view class='team_content_item_des'>1962年11月出生，中国籍，澳大利亚永久居留权，研究生学历，环境保护高级工程师、第四届环境保护机械标准化技术委员会委员。</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <!--联系方式  -->
+  <view class='contact'>
+    <view class='contact_title'>联系方式</view>
+
+    <view class='contact_section'>
+      <view class='contact_section_item'>
+        <image class='contact_section_item_img'></image>
+        <view class='contact_section_item_content'>www.guoxiaoqi.com</view>
+      </view>
+      <view class='contact_section_item'>
+        <image class='contact_section_item_img'></image>
+        <view class='contact_section_item_content'>www.guoxiaoqi.com</view>
+      </view>
+      <view class='contact_section_item'>
+        <image class='contact_section_item_img'></image>
+        <view class='contact_section_item_content'>guoixaoqi</view>
+        <image class='contact_section_item_weChatImg'></image>
+      </view>
+      <view class='contact_section_item'>
+        <image class='contact_section_item_img'></image>
+        <view class='contact_section_item_content'>0571-89925117</view>
+      </view>
+      <view class='contact_section_item'>
+        <image class='contact_section_item_img'></image>
+        <view class='contact_section_item_content'>guxiaoqi@163.com</view>
+      </view>
+      <view class='contact_section_item'>
+        <image class='contact_section_item_img'></image>
+        <view class='contact_section_item_content'>浙江省杭州市拱墅区和睦路525号一层B050-B061工位</view>
+      </view>
+    </view>
+
+  </view>
+
+</view>
+<!--style=" white-space: nowrap; display: flex"  -->

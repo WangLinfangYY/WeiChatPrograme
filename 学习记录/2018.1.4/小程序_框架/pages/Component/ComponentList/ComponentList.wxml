@@ -1,0 +1,49 @@
+
+
+<view class='list'>
+  <block wx:for="{{arr_componentNames}}">
+    <view class='item' bindtap='showListDetail' data-id='{{item}}' data-abc='123' data-index='{{index}}'>{{item}}</view>
+  </block>
+</view>
+
+
+
+
+
+
+<!-- <view class='list'>
+
+  <view class='item' bindtap='listRender'>view</view>
+  <view class='item' bindtap='condationRender'>scroll-view</view>
+  <view class='item' bindtap='template'>movable-view</view>
+  <view class='item' bindtap='event'>cover-view</view>
+  <view class='item' bindtap='imports'>icon</view>
+  <view class='item' bindtap='imports'>text</view>
+  <view class='item' bindtap='imports'>rich-text</view>
+  <view class='item' bindtap='imports'>progress</view>
+  <view class='item' bindtap='imports'>button</view>
+  <view class='item' bindtap='imports'>checkbox</view>
+  <view class='item' bindtap='imports'>form</view>
+  <view class='item' bindtap='imports'>input</view>
+  <view class='item' bindtap='imports'>label</view>
+  <view class='item' bindtap='imports'>picker</view>
+  <view class='item' bindtap='imports'>picker-view</view>
+  <view class='item' bindtap='imports'>radio</view>
+  <view class='item' bindtap='imports'>slider</view>
+  <view class='item' bindtap='imports'>switch</view>
+  <view class='item' bindtap='imports'>textarea</view>
+  <view class='item' bindtap='imports'>navigator</view>
+  <view class='item' bindtap='imports'>audio</view>
+  <view class='item' bindtap='imports'>image</view>
+  <view class='item' bindtap='imports'>icon</view>
+  <view class='item' bindtap='imports'>video</view>
+  <view class='item' bindtap='imports'>camera</view>
+  <view class='item' bindtap='imports'>live-player</view>
+  <view class='item' bindtap='imports'>live-pusher</view>
+  <view class='item' bindtap='imports'>map</view>
+  <view class='item' bindtap='imports'>canvas</view>
+  <view class='item' bindtap='imports'>open-data</view>
+  <view class='item' bindtap='imports'>web-view</view>
+  <view class='item' bindtap='imports'>contact-button</view>
+</view> -->
+

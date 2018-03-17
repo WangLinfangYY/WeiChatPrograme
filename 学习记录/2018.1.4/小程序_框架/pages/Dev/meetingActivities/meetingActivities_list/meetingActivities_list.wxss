@@ -1,0 +1,97 @@
+/* pages/Dev/meetingActivities/meetingActivities_list/meetingActivities_list.wxss */
+
+.item{
+  display: flex;
+  flex-direction: row;
+}
+.item_portrait{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100rpx;
+}
+.item_portrait_img{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background: blue;
+}
+.item_section{
+  margin-left: 30rpx;
+  flex: 1;
+}
+.item_section_name{
+  margin-top: 30rpx;
+  font-size: 12pt;
+}
+.item_section_imgAndTitle{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.item_section_imgAndTitle_img{
+  width: 40rpx;
+  height: 40rpx;
+  background: blue;
+}
+.item_section_imgAndTitle_title{
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+  flex: 1;
+  font-size: 13pt;
+}
+.item_section_imgAndTime{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.item_section_imgAndTime_img{
+  width: 40rpx;
+  height: 40rpx;
+  background: blue;
+}
+.item_section_imgAndTime_time{
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+  flex: 1;
+  font-size: 10pt;
+  color: gray;
+}
+.item_section_imgAndPlace{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.item_section_imgAndPlace_img{
+  width: 40rpx;
+  height: 40rpx;
+  background: blue;
+}
+.item_section_imgAndPlace_place{
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+  flex: 1;
+  font-size: 10pt;
+  color: gray;
+}
+
+.itme_line{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 2rpx;
+  background: lightgray;
+}
+
+
+.post{
+  height: 130rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: whitesmoke;
+}
+.post_btn{
+  margin: 20rpx;
+}

@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/WXML/wxml_list/wxml_list",
+    "pages/WXML/listRender/listRender",
+    "pages/WXML/conditionRender/conditionRender",
+    "pages/WXML/template/template",
+    "pages/WXML/event/event",
+    "pages/WXML/import/import",
+    "pages/WSX/wsx_list/wsx_list",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Component/ComponentList/ComponentList",
+    "pages/Component/view/view",
+    "pages/Component/song_detail/song_detail",
+    "pages/Component/scroll-view/scroll-view",
+    "pages/Component/movable-view/movable-view",
+    "pages/Dev/list/list",
+    "pages/Dev/comment/comment_list/comment_list",
+    "pages/Dev/comment/comment_detail/comment_detail",
+    "pages/Dev/template/template",
+    "pages/Dev/tenderAndBid/tenderAndBid_list/tenderAndBid_list",
+    "pages/Dev/tenderAndBid/tenderAndBid_detail/tenderAndBid_detail",
+    "pages/Dev/tenderAndBid/tenderAndBid_post/tenderAndBid_post",
+    "pages/Dev/meetingActivities/meetingActivities_list/meetingActivities_list",
+    "pages/Dev/meetingActivities/meetingActivities_post/meetingActivities_post",
+    "pages/Dev/company_detail/company_detail_home/company_detail_home"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#90f",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/WXML/wxml_list/wxml_list",
+        "text": "WXML"
+      },
+      {
+        "pagePath": "pages/Component/ComponentList/ComponentList",
+        "text": "Component"
+      },
+      {
+        "pagePath": "pages/Dev/list/list",
+        "text": "Dev"
+      },
+      {
+        "pagePath": "pages/WSX/wsx_list/wsx_list",
+        "text": "WSX"
+      }
+    ]
+  }
+}

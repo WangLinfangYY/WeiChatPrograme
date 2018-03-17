@@ -1,0 +1,15 @@
+<view class='list'>
+  <block wx:for="{{arr_dataSource}}">
+
+    <comment_item id = "comment_item" item = "{{item}}" hideLine = "{{index==arr_dataSource.length-1}}"  bind:showCommentDetail="_showCommentDetail" data-detailSource = "{{item}}" data-index = "{{index}}" ></comment_item>
+    
+  </block>
+</view>
+
+<view style='height:130rpx; margin-left:0;margin-right:0;'></view>
+
+<!--添加评论  -->
+<!-- <import src='../../template/template'/>
+<template is = "addComment" data="{{...data_comment}}"/>  -->
+
+<addComment id="addComment" title="点击添加评论" bind:sendComment='_sendComment'></addComment>

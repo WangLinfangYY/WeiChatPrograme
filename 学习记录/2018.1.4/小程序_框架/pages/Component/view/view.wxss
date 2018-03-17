@@ -1,0 +1,93 @@
+
+.page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*搜索*/
+.search{
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.search-bar{
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  background: #f4f4f4;
+}
+.search-wrap{
+  position: relative;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  height: 60rpx;
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 6rpx;
+}
+.icon-search{
+  margin-right: 10rpx;
+}
+.search-input{
+  flex: auto;
+  font-size: 28rpx;
+}
+.search-cancel{
+  padding: 20rpx;
+  font-size: 28rpx;
+}
+.search-result{
+  flex: auto;
+  margin: 0;
+  position: relative;
+}
+.scroll-view{
+  position: absolute;
+  margin: 1px;
+  /* height: 800px; */
+}
+.result-item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 0 20rpx 110rpx;
+  overflow: hidden;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+.result-item .media{
+  position: absolute; 
+  left: 16rpx;
+  top:16rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 999rpx;
+}
+.result-item .title{
+  margin-bottom: 4rpx;
+  color: #000;
+} 
+.result-item .subtitle{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 36rpx;
+  color: #808080; 
+  font-size: 24rpx;
+}
+.loading{
+  padding: 10rpx;
+  text-align: center;
+}
+/* .loading:before{
+  display: inline-block;
+  margin-right: 5rpx;
+  vertical-align: middle;
+} */
+.loading.complete:before{
+  display: none;
+}

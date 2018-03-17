@@ -1,0 +1,6 @@
+
+<view class='list'>
+  <block wx:for="{{arr_list}}">
+    <view class='item' bindtap='showListDetail' data-item='{{item}}' data-abc='123' data-index='{{index}}'>{{item.title}}</view>
+  </block>
+</view>

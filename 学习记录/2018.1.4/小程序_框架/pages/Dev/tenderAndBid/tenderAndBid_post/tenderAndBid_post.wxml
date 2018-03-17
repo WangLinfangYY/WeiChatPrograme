@@ -1,0 +1,16 @@
+<!--pages/Dev/tenderAndBid/tenderAndBid_post/tenderAndBid_post.wxml-->
+<view>
+  <view class='deadline'>
+    <view class='name'>招标截止时间</view>
+    <input class='deadline_input' bindinput='input_deadline'></input>
+  </view>
+  <view class='title'>
+    <view class='name'>标题</view>
+    <input class='title_input' bindinput='input_title'></input>
+  </view>
+  <view class='content'>
+    <view class='name'>招标内容</view>
+    <textarea class='content_textarea' bindinput='input_content'></textarea>
+  </view>
+  <button class='btn_complete' bindtap='complete'>完成</button>
+</view>

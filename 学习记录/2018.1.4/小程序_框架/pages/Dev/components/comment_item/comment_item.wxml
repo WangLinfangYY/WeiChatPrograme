@@ -1,0 +1,22 @@
+<!--pages/Dev/components/comment_item/comment_item.wxml-->
+ <view>
+  <view class='comment_item'>
+    <view class='comment_item_portrait'>
+      <image class='comment_item_portrait_img'></image>
+    </view>
+    <view class='comment_item_section'>
+      <view class='comment_item_section_nameAndBtn'>
+        <view class='comment_item_section_nameAndBtn_name'>{{item.name}}</view>
+          <button class='comment_item_section_nameAndBtn_btn' bindtap='_showCommentDetail' hidden='{{hideReplyBtn}}'>回复</button>
+      </view>
+      <view class='comment_item_section_content'>{{item.content}}</view>
+      <view class='comment_item_section_time'>{{item.time}}</view>
+      <view class='comment_item_section_replyList' hidden='{{!item.itemCommenList.length}}'>
+        <block wx:for="{{item.itemCommenList}}">
+          <view class='comment_item_section_replyList_item'>{{item.user}}：{{item.comment}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class='comment_item_line' hidden='{{hideLine}}'></view>
+</view> 

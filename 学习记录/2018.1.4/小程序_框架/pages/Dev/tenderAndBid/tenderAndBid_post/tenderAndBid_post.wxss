@@ -1,0 +1,52 @@
+/* pages/Dev/tenderAndBid/tenderAndBid_post/tenderAndBid_post.wxss */
+
+.deadline{
+  margin-top: 30rpx;
+  padding-left: 20rpx;
+}
+.deadline_input{
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border: 1px solid coral;
+  margin-right: 20rpx;
+  width: 60%;
+  height: 80rpx;
+  border-color: lightgrey;
+}
+.name{
+  font-size: 12pt;
+}
+.title{
+  margin-top: 36rpx;
+  padding-left: 20rpx;
+}
+.title_input{
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border: 1px solid coral;
+  margin-right: 20rpx;
+  height: 80rpx;
+  border-color: lightgrey;
+}
+.content{
+  margin-top: 36rpx;
+  padding-left: 20rpx;
+  margin-right: 0rpx; 
+}
+.content_textarea{
+  /* margin-right: 20rpx; */
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  height: 300rpx;
+  width: 94%;
+  border: 1rpx solid coral;
+  border-color: lightgray;
+}
+.btn_complete{
+  height: 80rpx;
+  margin-top: 100rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}

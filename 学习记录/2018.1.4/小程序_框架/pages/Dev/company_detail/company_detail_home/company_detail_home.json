@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "公司详情",
+  "usingComponents": {
+    "overView": "../components/company_detail_overView/company_detail_overView",
+    "news": "../components/company_detail_news/company_detail_news",
+    "community": "../components/company_detail_community/company_detail_community"    
+  }
+}

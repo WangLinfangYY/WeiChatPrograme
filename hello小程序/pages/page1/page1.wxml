@@ -1,0 +1,56 @@
+<view>{{text}}</view>
+<button bindtap='changeText'> Change normal data </button>
+
+<view>{{num}}</view>
+<button bindtap='changeNum'> Change normal num</button>
+
+<view>{{array[0].text}}</view>
+<button bindtap='changeItemInArray'> Change Array data </button>
+
+<view>{{object.text}}</view>
+<button bindtap='changeItemInObject'> Change Object data </button>
+
+<view>{{newField.text}}</view>
+<button bindtap='addNewField'> Add new data </button>
+
+<!-- 列表渲染 -->
+<view wx:for="{{array2}}">---------{{index+1}} : {{item}}</view>
+
+<!-- 条件渲染 -->
+<view wx:if="{{view == 'WEBVIEW'}}">WEBVIEW</view>
+<view wx:elif="{{view == 'APP'}}">APP</view>
+<view wx:else>MINA</view>   
+
+<!-- 模板 -->
+<!-- <view>模板</view> -->
+<template name="staffName">
+  <view>
+    FirstName:{{firstName}},LastName:{{lastName}}
+  </view>
+</template>
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+
+
+<!-- 小九九 -->
+<view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+  <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+    <view wx:if="{{i<=j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view>
+
+<!-- block标签 -->
+<block wx:for="{{['a','b','c','d','e','f']}}">
+  <view>{{index}}</view>
+  <view>{{item}}</view>
+</block>
+
+<switch wx:for="{{objectArray}}" wx:key="unique" style='display:block;'>{{item.id}}</switch>
+<button bindtap='switch'>switch</button>
+<button bindtap='addToFront'>Add to the front</button>
+
+<switch wx:for="{{numberArray}}" wx:key="*this" style='display:block;'>{{item}}</switch>
+<button bindtap='addNumberToFront'>Add to the front</button>

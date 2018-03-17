@@ -1,0 +1,11 @@
+
+<view class='section'>
+  <view class='section_title'>movable-view区域小于movable-area</view>
+  <movable-area style = "height:200px; width:200px; background-color:red;">
+    <movable-view style='height:50px; width:50px; background:blue;' x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area>
+  <view class='btn_area'>
+    <button size='mini' bindtap='tap'>click me to move to (30px,30px)</button>
+  </view>
+</view>

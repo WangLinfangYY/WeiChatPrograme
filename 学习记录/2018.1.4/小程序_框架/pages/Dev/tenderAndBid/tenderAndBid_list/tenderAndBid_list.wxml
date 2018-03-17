@@ -1,0 +1,23 @@
+
+<view class='list'>
+  <block wx:for="{{arr_dataSource}}">
+    <view class='item' bindtap='showDetail' data-item='{{item}}'>
+      <view class='item_portrait'>
+        <image class='item_portrait_img'></image>
+      </view>
+      <view class='item_section'>
+        <view class='item_section_name'>{{item.name}}</view>
+        <view class='item_section_content'>{{item.content}}</view>
+        <view class='item_section_deadline'>截止日期：{{item.deadline}}</view>
+      </view>
+      <view class='item_outOfDate' hidden='{{!item.isOutOfDate}}'>已过期</view>
+    </view>
+  </block>
+</view>
+
+<!--占位图  -->
+<view style='height:130rpx; margin-left:0;margin-right:0;'></view>
+
+<view class='post'>
+  <button class='post_btn' bindtap='post'>发帖</button>
+</view>

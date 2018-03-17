@@ -1,0 +1,59 @@
+<!--pages/Dev/company_detail/company_detail_home/company_detail_home.wxml-->
+<view class='view_bg'>
+  <view class='part1'>
+
+    <view class='part1_shopInfo'>
+      <view class='part1_shopInfo_logo'>
+        <image class='part1_shopInfo_logo_img'></image>
+      </view>
+      <view class='part1_shopInfo_titleAndMark'>
+        <view class='part1_shopInfo_titleAndMark_title'>{{item.name}}</view>
+        <view class='part1_shopInfo_titleAndMark_mark'>
+          <image class='part1_shopInfo_titleAndMark_mark_img'></image>
+          <view class='part1_shopInfo_titleAndMark_mark_content'>办公室，常温零食</view>
+        </view>
+      </view>
+      <view class='part1_shopInfo_line'></view>
+      <view class='part1_shopInfo_des'>
+        <view class='part1_shopInfo_des_item'>品途指数</view>
+        <view class='part1_shopInfo_des_zhiShu'>123124</view>
+        <view class='part1_shopInfo_des_item'>热度</view>
+        <view class='part1_shopInfo_des_reDu'>123456</view>
+      </view>
+    </view>
+
+    <view class='part1_operationForCommpany' hidden='{{!select.isOverView}}'>
+      <view class='part1_operationForCommpany_claim'>
+        <button class='part1_operationForCommpany_btn'>认证公司</button>
+      </view>
+      <view class='part1_operationForCommpany_follow'>
+        <button class='part1_operationForCommpany_btn'>+关注</button>
+      </view>
+      <view class='part1_operationForCommpany_share'>
+        <button class='part1_operationForCommpany_btn'>分享公司</button>
+      </view>
+    </view>
+
+    <view class='part1_select'>
+      <view class='part1_select_overview'>
+        <button class='part1_select_btn' bindtap='btnClick_overview'>概览</button>
+        <view class='part1_select_markView' hidden='{{!select.isOverView}}'></view>
+      </view>
+      <view class='part1_select_news'>
+        <button class='part1_select_btn' bindtap='btnClick_news'>新闻</button>
+        <view class='part1_select_markView' hidden='{{!select.isNews}}'></view>
+      </view>
+      <view class='part1_select_community'>
+        <button class='part1_select_btn' bindtap='btnClick_community'>社区</button>
+        <view class='part1_select_markView' hidden='{{!select.isCommunity}}'></view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='part2'>
+    <overView hidden="{{!select.isOverView}}"></overView>
+    <news hidden="{{!select.isNews}}"></news>
+    <community hidden="{{!select.isCommunity}}"></community>
+  </view>
+</view>

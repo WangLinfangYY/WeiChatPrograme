@@ -1,0 +1,68 @@
+
+<!--wx:for  -->
+<view class='wx_for' style='padding:15px; background-color:#e9e;'>
+  <view style='margin-left:0px;'>wx:for</view>
+  <view style='flex-direction:row; display:flex;'>
+      <view class='wx_for_item' wx:for="{{array_wx_for}}">{{index}}:{{item.message}}</view>
+  </view>
+  <!--小九九  -->
+  <view style='margin-top:30px;'>乘法口诀</view>
+  <scroll-view scroll-x style='margin-left:0px;'>
+    <view class="flex-wrp" style='flex-direction:row; display:flex;' wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+      <view  wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+        <view  wx:if="{{i>=j}}">
+          <view class='bc_blue' style='height:27px; width:200rpx; margin-top:2px; margin-left:2px;'>{{j}} * {{i}} = {{i*j}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="flex-wrp" style='flex-direction:row; display:flex;margin-top:30px;'>
+    <view>1</view>
+    <view>2</view>
+    <text>3</text>
+    <text>4</text>
+  </view>
+
+  <view class="flex-wrp" style="flex-direction:row; display:flex;margin-top:30px;">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+
+</view>
+
+<!--block wx:for  -->
+<view style='padding:15px; margin-top:30px; background-color:#ee9;'>
+  <view style='margin-left:10px;'>block wx:for</view>
+  <scroll-view scroll-x>
+    <view  style='display:flex; flex-direction:row; margin-bottom:20px;'>
+      <block wx:for="{{[1,2,3,4,5,6]}}">
+        <view class='wrp' style='margin-left:30px; margin-bottom:1px; display:flex; flex-dirextion:row; '>
+          <view style='margin-top:2px; background-color:#6f6;'>index:{{index}}</view>
+          <view style='margin-top:2px; margin-left:2px; background-color:#6f6;'>item:{{item}}</view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+
+<!--wx:key  -->
+<view style='background-color:#ef0; margin-top:30px; padding-bottom:15px; padding-top:15px;'>
+
+  <view style='margin-left:0px; background-color:#e60;'>wx:key</view>
+
+  <view style='margin-left:15px; margin-right:15px; margin-top:15px; padding-top:10px; padding-bottom:15px; border-radius:5px; background-color:#e60;'>
+    <switch wx:for="{{objectArray}}" wx:key="unique" style='display:block; margin-top:1px; margin-left:10px;margin-right:10px; padding:5px; background-color:#fe0;'>{{item.id}}</switch>
+    <button bindtap='switch' style='margin-top:20px;margin-left:10px;margin-right:10px;'> Switch </button>
+    <button bindtap='addToFront' style='margin-top:20px;margin-left:10px;margin-right:10px;'>Add to the front</button>
+  </view>
+
+  <view style='margin-left:15px; margin-right:15px; margin-top:15px; padding-top:10px; padding-bottom:15px; border-radius:5px; background-color:#e60;'>
+    <switch wx:for="{{numberArray}}" wx:key="*this" style='display:block; margin-top:1px; margin-left:10px;margin-right:10px; padding:5px; background-color:#fe0;'>
+      {{item}}
+    </switch>
+    <button bindtap='addNumberToFront' style='margin-top:20px;margin-left:10px;margin-right:10px;'>Add to the front</button>
+  </view>
+
+</view>

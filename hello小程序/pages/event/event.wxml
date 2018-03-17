@@ -1,0 +1,10 @@
+<view></view>
+<view id='outer' bind:touchstart="handleTap1" capture-bind:touchstart="handleTap2">
+  outer view
+  <view id='inner' bind:touchstart="handleTap3" capture-bind:touchstart="handleTap4">
+    inner view
+  </view>
+</view>
+<!--如果将上面代码中的第一个capture-bind改为capture-catch，将只触发handleTap2  -->
+
+<view data-alpha-beta='1' data-alphaBeta='2' bindtap='bindViewTap'>DataSet Test</view>

@@ -1,0 +1,14 @@
+<!--pages/Dev/component/addComment/addComment.wxml-->
+<!-- <text>pages/Dev/component/addComment/addComment.wxml</text> -->
+  <view class='btn_addComment_bg' type = primary>
+    <view wx:if="{{!isShowInput}}">
+      <button class='btn_addComment' style='margin-left:10rpx;margin-right:10rpx;' catchtap='showInput' >{{title}}</button>
+    </view>
+    <view wx:else>
+      <view class='inputCommentBg'>
+        <input class='input_comment' type='text' focus='input_focus' placeholder='请输入评论内容' bindinput='bind_input_content'>
+        </input>
+        <button class='btn_sendComment' catchtap='_sendComment'>发送</button>
+      </view>
+    </view>
+  </view>

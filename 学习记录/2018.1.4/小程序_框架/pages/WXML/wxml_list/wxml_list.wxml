@@ -1,0 +1,7 @@
+<view class='list'>
+  <view class='item' bindtap='listRender'>列表渲染</view>
+  <view class='item' bindtap='condationRender'>条件渲染</view>
+  <view class='item' bindtap='template'>模板</view>
+  <view class='item' bindtap='event'>事件</view>
+  <view class='item' bindtap='imports'>引用</view>
+</view>

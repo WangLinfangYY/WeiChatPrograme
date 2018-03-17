@@ -1,0 +1,7 @@
+<view style='margin-top:20px; padding:10px; background-color:#0ff;'>
+  <view style='padding:10px; background-color:#f80; border-radius:5px;'>
+    <view wx:if="{{condition}}">True</view>
+    <view wx:else>False</view>
+  </view>
+  <button bindtap='changeState' style='margin-left:10px; margin-right:10px; margin-top:30px;'>切换状态</button>
+</view>

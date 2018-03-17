@@ -1,0 +1,37 @@
+<!--pages/Dev/company_detail/components/company_detail_news/company_detail_news.wxml-->
+<view hidden='{{hidden}}'>
+  <view class='achievement'>
+    <view class='achievement_item'>
+      <view class='achievement_item_time'>2016-12-02</view>
+      <view class='achievement_item_content'>无人货架占有率达到21%</view>
+    </view>
+    <view class='achievement_item'>
+      <view class='achievement_item_time'>2016-08-02</view>
+      <view class='achievement_item_content'>第一个无人零售货架落户北京兆维工业园</view>
+    </view>
+    <view class='achievement_item'>
+      <view class='achievement_item_time'>2016-07-02</view>
+      <view class='achievement_item_content'>浙江几禾有限公司成立</view>
+    </view>
+    <view class='achievement_showMore'>查看更多</view>
+  </view>
+
+  <view class='information'>
+    <view class='information_title'>新闻资讯</view>
+    <view class='information_list'>
+      <block wx:for="{{[1,2]}}">
+        <view class='information_list_item'>
+          <image class='information_list_item_img'></image>
+          <view class='information_list_item_section'>
+            <view class='information_list_item_title'>无人货架开启楼宇电梯争夺战？这家杭州公司竟将货架摆进等候厅布点1千个</view>
+            <view class='information_list_item_fromAndTime'>
+              <view>铅笔道</view>
+              <view>2017年10月10日</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<!--这家杭州公司竟将货架摆进等候厅布点1千个  -->

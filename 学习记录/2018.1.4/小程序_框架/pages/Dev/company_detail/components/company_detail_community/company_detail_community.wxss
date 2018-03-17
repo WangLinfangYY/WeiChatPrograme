@@ -1,0 +1,68 @@
+/* pages/Dev/company_detail/components/company_detail_community/company_detail_community.wxss */
+
+.list_item{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 15rpx;
+  border-radius: 10rpx;
+  background: white;
+}
+.list_item_section{
+  display: flex;
+  margin-top: 10rpx;
+}
+.list_item_section_mark{
+  margin-top: 10rpx;
+  color: darkgreen;
+  font-size: 13pt;
+}
+.list_item_section_content{
+  margin-left: 0rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  font-size: 12pt; 
+  flex: 1;
+}
+.list_item_operate{
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-bottom: 15rpx;
+  flex: 1;
+  margin-top: 30rpx;
+}
+.list_item_operate_collect{
+  display: flex;
+  margin-left: 20rpx;
+  align-items: center;
+}
+.list_item_operate_collect_img{
+  width: 30rpx;
+  height: 30rpx;
+  background: blue;
+}
+.list_item_operate_collect_count{
+  margin-left: 10rpx;
+  font-size: 12pt;
+}
+.list_item_operate_comment{
+  display: flex;
+  margin-left: 80rpx;
+  align-items: center;
+}
+.list_item_operate_comment_img{
+  width: 30rpx;
+  height: 30rpx;
+  background: blue;
+}
+.list_item_operate_comment_count{
+  margin-left: 10rpx;
+  font-size: 12pt;
+}
+.list_item_operate_share{
+  margin-left: 390rpx;
+  width: 30rpx;
+  height: 30rpx;
+  background: blue;
+}

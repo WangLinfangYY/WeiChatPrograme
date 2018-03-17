@@ -1,0 +1,10 @@
+
+
+<comment_item item = "{{source}}" hideLine="true" hideReplyBtn= "true"></comment_item>
+<view style='height:130rpx; margin-left:0;margin-rightL0;'></view>
+
+
+<!-- <import src='../../template/template'/>
+<template is = "addComment" data="{{...data_comment}}"/>  -->
+
+<addComment id = "addComment" title = "点击回复评论" bind:sendComment = "_sendComment"></addComment>

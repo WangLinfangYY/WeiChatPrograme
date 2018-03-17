@@ -1,0 +1,66 @@
+/* pages/Dev/meetingActivities/meetingActivities_post/meetingActivities_post.wxss */
+
+.time{
+  margin-top: 30rpx;
+  padding-left: 20rpx;
+}
+.time_input{
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border: 1px solid coral;
+  /* margin-right: 20rpx; */
+  width: 380rpx;
+  height: 80rpx;
+  border-color: lightgrey;
+}
+.name{
+  font-size: 12pt;
+}
+.title{
+  margin-top: 36rpx;
+  padding-left: 20rpx;
+}
+.title_input{
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border: 1px solid coral;
+  margin-right: 20rpx;
+  height: 80rpx;
+  border-color: lightgrey;
+}
+.place{
+  margin-top: 36rpx;
+  padding-left: 20rpx;
+  margin-right: 0rpx; 
+}
+.place_input{
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+  margin-right: 20rpx;
+  height: 80rpx;
+  border: 1rpx solid coral;
+  border-color: lightgray;
+}
+
+.link{
+  margin-top: 36rpx;
+  padding-left: 20rpx;
+  margin-right: 0rpx; 
+}
+.link_input{
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+  margin-right: 20rpx;
+  height: 80rpx;
+  border: 1rpx solid coral;
+  border-color: lightgray;
+}
+
+.btn_complete{
+  height: 80rpx;
+  margin-top: 100rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}

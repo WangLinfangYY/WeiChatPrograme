@@ -1,0 +1,2 @@
+<!--pages/Component/view/song_detail/song_detail.wxml-->
+<web-view src = 'https://y.qq.com/#type=song&id=107360963'></web-view>

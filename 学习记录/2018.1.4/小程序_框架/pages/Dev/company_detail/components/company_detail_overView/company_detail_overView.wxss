@@ -1,0 +1,198 @@
+/* pages/Dev/company_detail/components/company_detail_overView/company_detail_overView.wxss */
+
+.description{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding: 20rpx;
+  background: white;
+  font-size: 12pt;
+  border-radius: 10rpx;
+}
+
+.financeHistory{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+.financeHistory_title{
+  margin-left: 20rpx;
+  font-size: 12pt;
+}
+.financeHistory_detail{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding:20rpx;
+  background: white;
+  border-radius: 10rpx;
+}
+.financeHistory_detail_time{
+  font-size: 12pt;
+}
+.financeHistory_detail_des{
+  margin-left: 20rpx;
+}
+.financeHistory_detail_des_stageAndMoney{
+  display: flex;
+  flex-direction: row;
+}
+.financeHistory_detail_des_stageAndMoney_stage{
+  font-size: 12pt;
+}
+.financeHistory_detail_des_stageAndMoney_money{
+  margin-left: 20rpx;
+  font-size: 12pt;
+}
+.financeHistory_detail_des_from{
+  margin-top: 15rpx;
+  font-size: 12pt;
+  color: gray;
+}
+
+.info{
+  margin-top: 30rpx;
+}
+.info_title{
+  margin-left: 20rpx;
+  font-size: 12pt;
+}
+.info_content{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-radius: 10rpx;
+  background: white;
+}
+.info_content_nameAndContent{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.info_content_nameAndContent_name{
+  font-size: 12pt;
+  color: gray;
+}
+.info_content_nameAndContent_conent{
+  margin-left: 20rpx;
+  font-size: 12pt;
+}
+
+.team{
+  margin-top: 30rpx;
+}
+.team_title{
+  margin-left: 20rpx;
+  font-size: 12pt;
+}
+.team_content{
+  margin-top: 10rpx;
+  padding-right: 10rpx;
+  margin-right: 20rpx;
+   /* display: flex; 
+   flex-direction: row; */
+   white-space: nowrap; 
+}
+.team_content_item{
+  display: inline-block;
+  flex-direction: row; 
+  flex-wrap: wrap;  
+  margin-top: 35rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  padding-bottom: 10rpx;
+  width: 500rpx;
+  /* height: 220rpx;   */
+  border-radius: 10rpx;
+  background: white;
+}
+.team_content_item_person{
+  display: flex;
+  flex-direction: row;
+}
+.team_content_item_person_img{
+  margin-left: 20rpx;
+  margin-top: -30rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background: blue;
+}
+.team_content_item_person_name{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  font-size: 12pt;
+}
+.team_content_item_person_line{
+  margin-left: 20rpx;
+  width: 2rpx;
+  margin-top: 10rpx;
+  background: black;
+}
+.team_content_item_person_job{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  font-size: 12pt;
+}
+ .team_content_item_des{
+  white-space: pre-wrap; 
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12pt;
+} 
+/* .team_content_item_des{
+  display: -webkit-box;
+  font-size: 12pt;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+} */
+
+.contact{
+  margin-top: 30rpx;
+}
+.contact_title{
+  margin-left: 20rpx;
+  font-size: 12pt;
+}
+.contact_section{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+  border-radius: 10rpx;
+  background: white;
+}
+.contact_section_item{
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.contact_section_item_img{
+  margin-left: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+  background: blue;
+}
+.contact_section_item_content{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 12pt;
+  flex: 1;
+}
+.contact_section_item_weChatImg{
+  margin-right: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  background: blue;
+}

@@ -1,0 +1,23 @@
+<!--定义模板  -->
+<template name="msgItem">
+  <view style='display:flex; flex-direction:column; margin-top:20px; padding:15px; background-color:#0ff;'>
+    <text style='margin-top:1px; background-color:#fe2; border-radius:5px;text-align:center;'>{{index}} : {{msg}}</text>
+    <text style='margin-top:1px; background-color:#fe2; border-radius:5px; text-align:center;'>Time : {{time}}</text>
+  </view>
+</template>
+
+<template name="odd">
+  <view style='background-color:#6f0;'>odd</view>
+</template>
+<template name="even">
+  <view style='background-color:#f09;'>even</view>
+</template>
+
+<!--使用模板  -->
+<template is="msgItem" data="{{...item}}" />
+
+<view style='margin-top:30px; padding:15px;background-color:#863'>
+  <block wx:for="{{[1,2,3,4,5]}}">
+    <template is="{{item % 2 == 0 ? 'even':'odd'}}" />
+  </block>
+</view>

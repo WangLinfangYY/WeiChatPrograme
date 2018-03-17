@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "招标详情",
+  "usingComponents": {
+    "addComment":"../../components/addComment/addComment",
+    "comment_item": "../../components/comment_item/comment_item"
+  }
+}

@@ -1,0 +1,73 @@
+/* pages/Dev/components/comment_item/comment_item.wxss */
+
+.comment_item{
+  display: flex;
+  flex-direction: row;
+}
+.comment_item_portrait{
+  display: flex; 
+  justify-content: center;
+  background: white;
+  width: 130rpx;
+}
+.comment_item_portrait_img{
+  height: 80rpx;
+  width: 80rpx;
+  margin-top: 20rpx;
+  border-radius: 50%;
+  background: blue;
+}
+.comment_item_section{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-right: 12rpx;
+}
+.comment_item_section_nameAndBtn{
+  display: flex;
+  flex-direction: row;
+}
+.comment_item_section_nameAndBtn_name{
+  padding-top: 30rpx;
+  font-size: 10pt;
+  color: blue;
+}
+.comment_item_section_nameAndBtn_btn{
+  width: 80rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  font-size: 10pt;
+}
+.comment_item_section_content{
+  padding-top: 15rpx;
+  font-size: 12pt;
+}
+.comment_item_section_time{
+  padding-top: 15rpx;
+  font-size: 11pt;
+  color: gray;
+}
+.comment_item_section_replyList{
+  margin-top: 10rpx;
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+  background: lightgray;
+}
+.comment_item_section_replyList_item{
+  padding-top: 20rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  font-size: 11pt;
+}
+
+.comment_item_line{
+  margin-top: 10rpx;
+  margin-left: 15rpx;
+  margin-right: 0rpx;
+  height: 2rpx;
+  background: lightgray;
+}

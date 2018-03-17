@@ -1,0 +1,21 @@
+<!--pages/Dev/meetingActivities/meetingActivities_post/meetingActivities_post.wxml-->
+
+<view>
+  <view class='time'>
+    <view class='name'>活动时间：包含开始时间和截止时间</view>
+    <input class='time_input' bindinput='input_time'></input>
+  </view>
+  <view class='title'>
+    <view class='name'>活动标题</view>
+    <input class='title_input' bindinput='input_title'></input>
+  </view>
+  <view class='place'>
+    <view class='name'>活动地点</view>
+    <input class='place_input' bindinput='input_place'></input>
+  </view>
+  <view class='link'>
+    <view class='name'>活动链接</view>
+    <input class='link_input' bindinput='input_link'></input>
+  </view>
+  <button class='btn_complete' bindtap='complete'>完成</button>
+</view>

@@ -1,0 +1,25 @@
+
+<view class='search'>
+  <!--搜索框  -->
+  <view class='search-bar'>
+    <view class='search-wrap'>
+      <icon type='search' size='16' class='icon-search' />
+      <input type='text' placeholder='请输入搜索内容' class='search-input' name="searchKeyword" bindinput='bindKeywordInput' value='{{searchKeyword}}'></input>
+    </view>
+    <view class='search-cancel' bindtap='keywordSearch'>搜索</view>
+  </view>
+  <!--搜索结果  -->
+  <view class='search-result'>
+    <scroll-view scroll-y bindscrolltolower="searchScrollLower" class='scroll-view'>
+      <view class='result-item' wx:for="{{searchSongList}}" wx:key="unique" data-data='{{item}}' bindtap='showSongDetail'>
+        <view class="icon{{item.isonly=='0' ? 'nocopyright':''}}" ></view>
+        <text class='title'>{{item.songname}}</text>
+        <view class='subtitle'>
+          <text wx:for="{{item.singer}}" wx:key="unique">{{item.name}}</text>
+        </view>
+      </view>
+      <view class='loading' hidden='{{!mark_loadMore}}'>上拉加载更多</view>
+      <view class='loading complete' hidden='{{!mark_noMore}}'>已加载全部</view>
+    </scroll-view>
+  </view>
+</view>

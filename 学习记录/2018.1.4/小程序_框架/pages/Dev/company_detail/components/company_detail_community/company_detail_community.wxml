@@ -1,0 +1,25 @@
+<!--pages/Dev/company_detail/components/company_detail_community/company_detail_community.wxml-->
+
+<view hidden='{{hidden}}'>
+  <view class='list'>
+    <block wx:for="{{[1,2,3,4,5,6]}}">
+      <view class='list_item'>
+        <view class='list_item_section'>
+          <view class='list_item_section_mark'>【招标】</view>
+           <view class='list_item_section_content'>常温零食供应招标需求，大家快来看</view> 
+        </view>
+        <view class='list_item_operate'>
+          <view class='list_item_operate_collect'>
+            <image class='list_item_operate_collect_img'></image>
+            <view class='list_item_operate_collect_count'>12</view>
+          </view>
+          <view class='list_item_operate_comment'>
+            <image class='list_item_operate_comment_img'></image>
+            <view class='list_item_operate_comment_count'>12</view>
+          </view>
+          <image class='list_item_operate_share'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

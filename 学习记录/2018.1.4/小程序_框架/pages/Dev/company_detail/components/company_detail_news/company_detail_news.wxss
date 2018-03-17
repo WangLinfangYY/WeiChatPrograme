@@ -1,0 +1,73 @@
+/* pages/Dev/company_detail/components/company_detail_news/company_detail_news.wxss */
+.achievement{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+  border-radius: 10rpx;
+  background: white;
+}
+.achievement_item{
+  margin-top: 15rpx;
+  font-size: 12pt;
+  color: gray;
+}
+.achievement_item_time{
+  margin-left: 20rpx;
+}
+.achievement_item_content{
+  margin-top: 15rpx;
+  margin-left: 100rpx;
+}
+.achievement_showMore{
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 12pt;
+}
+
+.information{
+  margin-top: 30rpx;
+}
+.information_title{
+  margin-left: 20rpx;
+  font-size: 12pt;
+}
+.information_list{
+  margin-top: 20rpx;
+}
+.information_list_item{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  /* height: 160rpx; */
+  border-radius: 10rpx;
+  background: white;
+}
+.information_list_item_img{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  background: blue;
+}
+.information_list_item_section{
+  flex: 1;
+  margin-left: 20rpx;
+}
+.information_list_item_title{
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+  font-size: 11pt;
+}
+.information_list_item_fromAndTime{
+  display: flex;
+  bottom: 0;
+  justify-content: space-between;
+  margin-right: 10rpx;
+  margin-top: 20rpx;
+  font-size: 11pt;
+  color: gray;
+}

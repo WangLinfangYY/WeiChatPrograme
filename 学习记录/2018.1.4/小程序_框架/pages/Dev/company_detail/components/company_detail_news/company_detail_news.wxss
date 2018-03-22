@@ -1,66 +1,98 @@
 /* pages/Dev/company_detail/components/company_detail_news/company_detail_news.wxss */
 .achievement{
-  margin-left: 20rpx;
-  margin-right: 20rpx;
-  padding-top: 10rpx;
   padding-bottom: 20rpx;
-  border-radius: 10rpx;
   background: white;
 }
 .achievement_item{
-  margin-top: 15rpx;
-  font-size: 12pt;
-  color: gray;
-}
-.achievement_item_time{
-  margin-left: 20rpx;
-}
-.achievement_item_content{
-  margin-top: 15rpx;
-  margin-left: 100rpx;
-}
-.achievement_showMore{
   display: flex;
-  justify-content: flex-end;
-  margin-left: 20rpx;
-  margin-right: 20rpx;
-  font-size: 12pt;
+  flex-direction: row;
+}
+.achievement_item_mark{
+  margin-left: 30rpx;
+  margin-top: 60rpx;
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #679CFF;
+}
+.achievement_item_titleAndTime{
+  padding-top: 30rpx;
+  padding-right: 30rpx;
+  margin-left: 28rpx;
+}
+.achievement_item_titleAndTime_title{
+  font-size: 26rpx;
+  color: #14171a;
+}
+.achievement_item_titleAndTime_time{
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #AAB2C2;
+}
+.achievement_item_line{
+  height: 2rpx;
+  width: 579rpx;
+  margin-top: 13rpx;
+  margin-left: -38rpx;
+  background: #F2F2F2;
 }
 
+
+
+
 .information{
-  margin-top: 30rpx;
+  margin-top: 20rpx;
+  background: white;
+  padding-top: 27rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.information_line{
+  margin-top: 21rpx;
+  width: 641rpx;
+  height: 2rpx;
+  background: #f2f2f2;
 }
 .information_title{
-  margin-left: 20rpx;
-  font-size: 12pt;
+  font-size: 30rpx;
+  color: #14171A;
 }
 .information_list{
-  margin-top: 20rpx;
+  margin-top: 0rpx;
 }
 .information_list_item{
   display: flex;
   flex-direction: row;
-  margin-top: 20rpx;
-  margin-left: 20rpx;
-  margin-right: 20rpx;
+  margin-top: 0rpx;
+  margin-left: 0rpx;
+  margin-right: 30rpx;
   /* height: 160rpx; */
   border-radius: 10rpx;
   background: white;
 }
 .information_list_item_img{
-  width: 160rpx;
-  height: 160rpx;
-  border-radius: 10rpx;
+  margin-top: 17rpx;
+  margin-right: 0rpx;
+  width: 236rpx;
+  height: 161rpx;
   background: blue;
+}
+.information_list_item_line{
+  margin-top: 23rpx;
+  margin-right: -160rpx; 
+  height: 2rpx;
+  background: #f2f2f2;
 }
 .information_list_item_section{
   flex: 1;
-  margin-left: 20rpx;
+  margin-left: 0rpx;
+  margin-right: 40rpx;
 }
 .information_list_item_title{
-  margin-top: 10rpx;
+  margin-top: 21rpx;
   margin-right: 10rpx;
-  font-size: 11pt;
+  font-size: 28rpx;
+  color: #14171A;
 }
 .information_list_item_fromAndTime{
   display: flex;
@@ -68,6 +100,6 @@
   justify-content: space-between;
   margin-right: 10rpx;
   margin-top: 20rpx;
-  font-size: 11pt;
-  color: gray;
+  font-size: 24rpx;
+  color: #AAB2C2;
 }

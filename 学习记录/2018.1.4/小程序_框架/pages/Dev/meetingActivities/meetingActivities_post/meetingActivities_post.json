@@ -1,1 +1,6 @@
-{}
+{
+  "navigationBarTitleText": "发新帖",
+  "usingComponents": {
+    "datePicker": "../../components/datePicker/datePicker"
+  }
+}

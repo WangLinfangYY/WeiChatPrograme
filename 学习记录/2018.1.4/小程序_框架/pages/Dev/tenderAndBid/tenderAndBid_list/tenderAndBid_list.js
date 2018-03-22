@@ -4,6 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    imgSrc_outOfData:'../image/mark_outOfDate.png',
     arr_dataSource:[
       {
         name: '果小7',

@@ -1,66 +1,106 @@
 /* pages/Dev/meetingActivities/meetingActivities_post/meetingActivities_post.wxss */
 
-.time{
-  margin-top: 30rpx;
-  padding-left: 20rpx;
-}
-.time_input{
-  margin-top: 10rpx;
-  padding-left: 20rpx;
-  padding-right: 20rpx;
-  border: 1px solid coral;
-  /* margin-right: 20rpx; */
-  width: 380rpx;
-  height: 80rpx;
-  border-color: lightgrey;
+.bg{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
 }
 .name{
-  font-size: 12pt;
+  font-size: 30rpx;
+  color: #141711;
 }
 .title{
-  margin-top: 36rpx;
-  padding-left: 20rpx;
+  margin-top: 34rpx;
 }
 .title_input{
-  margin-top: 10rpx;
+  margin-top: 23rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border: 1px solid ;
+  height: 88rpx;
+  border-color: #e1e3ed;
+  font-size: 26rpx;
+  color: #14171A;
+}
+.time{
+  margin-top: 32rpx;
+}
+.time_input{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 88rpx;
+}
+.time_input_start{
+  margin-top: 23rpx;
   padding-left: 20rpx;
   padding-right: 20rpx;
   border: 1px solid coral;
-  margin-right: 20rpx;
-  height: 80rpx;
-  border-color: lightgrey;
+  width: 270rpx;
+  height: 88rpx;
+  border-color: #e1e3ed;
+  font-size: 26rpx;
+  color: #14171A;
+}
+.time_input_img{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: -50rpx;
+  margin-top: 26rpx;
+}
+.time_input_to{
+  margin-top: 26rpx;
+  margin-left: 36rpx;
+  font-size: 26rpx;
+  color: #14171A;
+}
+.time_input_end{
+  margin-top: 23rpx;
+  margin-left: 16rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border: 1px solid coral;
+  height: 88rpx;
+  width: 270rpx;
+  border-color: #e1e3ed;
+  font-size: 26rpx;
+  color: #14171A;
 }
 .place{
-  margin-top: 36rpx;
-  padding-left: 20rpx;
+  margin-top: 32rpx;
   margin-right: 0rpx; 
 }
 .place_input{
-  margin-top: 10rpx;
+  margin-top: 23rpx;
   padding-left: 20rpx;
-  margin-right: 20rpx;
-  height: 80rpx;
+  height: 88rpx;
   border: 1rpx solid coral;
-  border-color: lightgray;
+  border-color: #e1e3ed;
+  font-size: 26rpx;
+  color: #14171A;
 }
 
 .link{
-  margin-top: 36rpx;
-  padding-left: 20rpx;
+  margin-top: 32rpx;
   margin-right: 0rpx; 
 }
 .link_input{
-  margin-top: 10rpx;
+  margin-top: 23rpx;
   padding-left: 20rpx;
-  margin-right: 20rpx;
-  height: 80rpx;
+  height: 88rpx;
   border: 1rpx solid coral;
-  border-color: lightgray;
+  border-color: #e1e3ed;
+  font-size: 26rpx;
+  color: #14171A;
 }
 
 .btn_complete{
-  height: 80rpx;
-  margin-top: 100rpx;
-  margin-left: 50rpx;
-  margin-right: 50rpx;
+  height: 78rpx;
+  padding-top: 6rpx;
+  margin-top: 269rpx;
+  margin-left: 133rpx;
+  margin-right: 133rpx;
+  border-radius: 39rpx;
+  background: #679cff;
+  font-size: 26rpx;
+  color: white;
 }

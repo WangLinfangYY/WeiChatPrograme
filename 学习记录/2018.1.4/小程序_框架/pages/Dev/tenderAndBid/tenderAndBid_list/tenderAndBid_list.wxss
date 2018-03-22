@@ -1,15 +1,48 @@
 
+.searchAndPost{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2rpx;
+  background: white;
+  height: 102rpx;
+}
+.searchAndPost_image{
+  width: 48rpx;
+  height: 48rpx;
+  margin-left: 36rpx;
+}
+.searchAndPost_input
+{
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  margin-right: 10rpx;
+  flex: 1;
+}
+.searchAndPost_line{
+  margin-right: 0rpx;
+  width: 4rpx;
+  height: 34rpx;
+  background: #E1E3ED;
+}
+.searchAndPost_post{
+  width: 200rpx;
+  padding-left:52rpx; 
+  font-size: 30rpx;
+}
 .list{
   margin-top: 1rpx;
   padding-top: 1rpx;
   padding-bottom: 2rpx;
-  background: lightgray;
+  background: #F5F6F8; 
 }
 .item{
   display: flex;
   flex-direction: row;
-  background: lightgray;
-  padding-top: 2rpx;
+  background: #F5F6F8;
+  padding-top: 20rpx;
   padding-bottom: 2rpx;
 }
 
@@ -20,9 +53,9 @@
   width: 130rpx;
 }
 .item_portrait_img{
-  margin-top: 20rpx;
-  width: 70rpx;
-  height: 70rpx;
+  margin-top: 23rpx;
+  width: 66rpx;
+  height: 66rpx;
   background: blue;
   border-radius: 50%;
 }
@@ -30,25 +63,26 @@
 .item_section{
   margin-left: 0rpx;
   margin-right: 0rpx;
-  padding-top: 15rpx;
-  flex: 1;
+  padding-top: 39rpx;
+  flex: 1; 
   background: white;
 }
 .item_section_name{
   display: flex;
   align-items: center;
-  font-size: 11pt;
-  color: blue;
+  font-size: 26rpx;
+  color: #14171A;
 }
 .item_section_content{
-  padding-top: 10rpx;
-  font-size: 12pt;
+  padding-top: 33rpx;
+  font-size: 34rpx;
+  color: #14171A;
 }
 .item_section_deadline{
-  padding-top: 15rpx;
-  padding-bottom: 15rpx;
-  font-size: 10pt;
-  color: gray;
+  padding-top: 19rpx;
+  padding-bottom: 23rpx;
+  font-size: 31.2rpx;
+  color: #657086;
 }
 
 .item_outOfDate{
@@ -58,8 +92,12 @@
   font-size: 12pt;
   padding-left: 10rpx;
   padding-right: 10rpx;
+  background: white;
 }
-
+.item_outOfDate_image{
+  width: 195rpx;
+  height: 150rpx;
+}
 .post{
   height: 130rpx;
   position: fixed;
@@ -69,4 +107,7 @@
 }
 .post_btn{
   margin: 20rpx;
+}
+page{
+  background-color: #F5F6F8;
 }

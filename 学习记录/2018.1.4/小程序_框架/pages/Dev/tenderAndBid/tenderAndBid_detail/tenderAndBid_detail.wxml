@@ -4,37 +4,34 @@
 
   <view class='shopInfo'>
     <view class='shopInfo_logo'>
-      <image class='shopInfo_logo_img'></image>
+      <image class='shopInfo_logo_img' src='../image/tmp_head.png'></image>
     </view>
-    <view class='shopInfo_titleAndMark'>
-      <view class='shopInfo_titleAndMark_title'>{{item.name}}</view>
-      <view class='shopInfo_titleAndMark_mark'>
-        <image class='shopInfo_titleAndMark_mark_img'></image>
-        <view class='shopInfo_titleAndMark_mark_content'>办公室，常温零食</view>
+    <view class='shopInfo_Item'>
+      <view class='shopInfo_Item_nameAndLevel'>
+        <view class='shopInfo_Item_nameAndLevel_name'>{{item.name}}</view>
+        <view class='shopInfo_Item_nameAndLevel_level'>Pre-A</view>
       </view>
-    </view>
-    <view class='shopInfo_line'></view>
-    <view class='shopInfo_des'>
-      <view class='shopInfo_des_item'>品途指数</view>
-      <view class='shopInfo_des_zhiShu'>123124</view>
-      <view class='shopInfo_des_item'>热度</view>
-      <view class='shopInfo_des_reDu'>123456</view>
+      <view class='shopInfo_Item_content'>办公室，常温零食</view>
+      <view class='shopInfo_des'> 
+        <image class='shopInfo_des_mark_zhiShu' src='../image/zhiShu.png'></image>
+        <view class='shopInfo_des_zhiShu'>123124</view>
+        <image class='shopInfo_des_mark_reDu' src='../image/reDu.png'></image>
+        <view class='shopInfo_des_reDu'>123456</view>
+      </view>
     </view>
   </view>
 
   <view class='shopDes'>
     <view class='shopDes_situation'>
-      <view class='shopDes_content'>招标状况：</view>
-      <view class='shopDes_content'>提供办公室，常温零食等等</view>
+      <view class='shopDes_content_title'>招标状况：</view>
+      <view class='shopDes_content'>果小7是一家便利货架提供商，定位于楼宇场景，主要做常温零食和水果，专注于为白领群体提供鲜果服务，微信公众号为B端、C端用户提供定水果服务，C端用户提供定水果服务</view>
     </view>
     <view class='shopDes_require'>
-      <view class='shopDes_content'>资质要求：</view>
-      <view class='shopDes_content'>上市公司</view>
-      <view class='shopDes_content'>有自己的加工场所</view>
-      <view class='shopDes_content'>卫生安全证明</view>
+      <view class='shopDes_content_title'>资质要求：</view>
+      <view class='shopDes_content'>上市公司,有自己的加工场所,卫生安全证明</view>
     </view>
     <view class='shopDes_contact'>
-      <view class='shopDes_content'>联系方式：</view>
+      <view class='shopDes_content_title'>联系方式：</view>
       <view class='shopDes_content'>电话：123456789</view>
       <view class='shopDes_content'>邮箱：guoxiaoqi@pintu360.com</view>
     </view>

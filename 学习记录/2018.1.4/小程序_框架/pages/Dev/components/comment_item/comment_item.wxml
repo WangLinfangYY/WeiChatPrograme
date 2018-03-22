@@ -2,15 +2,19 @@
  <view>
   <view class='comment_item'>
     <view class='comment_item_portrait'>
-      <image class='comment_item_portrait_img'></image>
+      <image class='comment_item_portrait_img' src='../image/tmp_head.png'></image>
     </view>
     <view class='comment_item_section'>
       <view class='comment_item_section_nameAndBtn'>
-        <view class='comment_item_section_nameAndBtn_name'>{{item.name}}</view>
-          <button class='comment_item_section_nameAndBtn_btn' bindtap='_showCommentDetail' hidden='{{hideReplyBtn}}'>回复</button>
+        <view class='comment_item_section_nameAndBtn_combine'>
+          <view class='comment_item_section_nameAndBtn_name'>{{item.name}}</view>
+          <view class='comment_item_section_nameAndBtn_time'>{{item.time}}</view>
+        </view>
+          <view class='comment_item_section_nameAndBtn_btn' bindtap='_showCommentDetail' hidden='{{hideReplyBtn}}' >
+            <image class='comment_item_section_nameAndBtn_btn_img' src='{{imgSrc_comment_reply}}'></image>
+          </view>
       </view>
       <view class='comment_item_section_content'>{{item.content}}</view>
-      <view class='comment_item_section_time'>{{item.time}}</view>
       <view class='comment_item_section_replyList' hidden='{{!item.itemCommenList.length}}'>
         <block wx:for="{{item.itemCommenList}}">
           <view class='comment_item_section_replyList_item'>{{item.user}}：{{item.comment}}</view>

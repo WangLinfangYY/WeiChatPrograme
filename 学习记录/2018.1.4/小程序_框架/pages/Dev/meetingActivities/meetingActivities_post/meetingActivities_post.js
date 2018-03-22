@@ -1,20 +1,35 @@
 // pages/Dev/meetingActivities/meetingActivities_post/meetingActivities_post.js
 
 var delegate;
+var datePicker;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    time:'',
+    isShowDatePicker:false,
+    isSelectTimeForStart:true,
+    time_start:'',
+    time_end:'',
     title:'',
     place:'',
     link:''
   },
 
-  input_time: function (e) { 
-    this.data.time = e.detail.value;
+  input_time_start: function (e) { 
+    this.setData({
+      isShowDatePicker: true,
+      isSelectTimeForStart:true
+    });
+    datePicker = this.selectComponent("#datePicker");
+  },
+  input_time_end:function(){
+    this.setData({
+      isShowDatePicker: true,
+      isSelectTimeForStart: false
+    });
+    datePicker = this.selectComponent("#datePicker");
   },
   input_title: function (e) { 
     this.data.title = e.detail.value;
@@ -25,9 +40,35 @@ Page({
   input_link: function (e) { 
     this.data.link = e.detail.value;
   },
-
+/**
+ * 取消
+ */
+  _cancel:function(){
+    this.setData({
+      isShowDatePicker: false,
+    });
+  },
+/**
+ * 确定
+ */
+  _confirm:function(){
+    if (this.data.isSelectTimeForStart){
+      this.setData({
+        time_start:datePicker.data.year + '-' + datePicker.data.month + '-' + datePicker.data.day,
+        isShowDatePicker:false,
+      })
+    }else{
+      this.setData({
+        time_end: datePicker.data.year + '-' + datePicker.data.month + '-' + datePicker.data.day,
+        isShowDatePicker: false,
+      })
+    }
+    this.setData({
+      isShowDatePicker: false,
+    });
+  },
   complete:function(){
-    if (!this.data.time || !this.data.title || !this.data.place || !this.data.link){
+    if (!this.data.time_start || !this.data.time_end || !this.data.title || !this.data.place || !this.data.link){
       wx.showModal({
         title: '',
         content: '请将内容填写完整',
@@ -37,7 +78,8 @@ Page({
     delegate.data.arr_dataSource = [{
       name: "品途N号",
       title: this.data.title,
-      time: this.data.time,
+      time_start: this.data.time_start,
+      time_end: this.data.time_end,
       place: this.data.place,
     }].concat(delegate.data.arr_dataSource);
     delegate.setData({

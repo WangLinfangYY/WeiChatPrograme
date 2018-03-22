@@ -1,53 +1,62 @@
 <!--pages/Dev/company_detail/company_detail_home/company_detail_home.wxml-->
-<view class='view_bg'>
+<!-- <view class='view_bg'> -->
   <view class='part1'>
 
     <view class='part1_shopInfo'>
       <view class='part1_shopInfo_logo'>
-        <image class='part1_shopInfo_logo_img'></image>
+        <image class='part1_shopInfo_logo_img' src='../image/tmp_head.png'></image>
       </view>
-      <view class='part1_shopInfo_titleAndMark'>
-        <view class='part1_shopInfo_titleAndMark_title'>{{item.name}}</view>
-        <view class='part1_shopInfo_titleAndMark_mark'>
-          <image class='part1_shopInfo_titleAndMark_mark_img'></image>
-          <view class='part1_shopInfo_titleAndMark_mark_content'>办公室，常温零食</view>
+      <view class='part1_shopInfo_item'>
+        <view class='part1_shopInfo_item_nameAndLevel'>
+          <view class='part1_shopInfo_item_nameAndLevel_name'>{{item.name}}</view>
+          <view class='part1_shopInfo_item_nameAndLevel_level'>Pre-A</view>
         </view>
-      </view>
-      <view class='part1_shopInfo_line'></view>
-      <view class='part1_shopInfo_des'>
-        <view class='part1_shopInfo_des_item'>品途指数</view>
-        <view class='part1_shopInfo_des_zhiShu'>123124</view>
-        <view class='part1_shopInfo_des_item'>热度</view>
-        <view class='part1_shopInfo_des_reDu'>123456</view>
+        
+        <view class='part1_shopInfo_item_content'>办公室，常温零食</view>
+        <view class='part1_shopInfo_des'>
+          <view class='part1_shopInfo_des_zhiShu'>
+            <view class='part1_shopInfo_des_zhiShu_content'>123124</view>
+            <view class='part1_shopInfo_des_title'>品途指数</view>
+          </view>
+          <view class='part1_shopInfo_des_line'></view>
+          <view class='part1_shopInfo_des_reDu'>
+            <view class='part1_shopInfo_des_reDu_content'>123456</view>
+            <view class='part1_shopInfo_des_title'>热度</view>
+          </view>  
+        </view>  
       </view>
     </view>
+    <view class='part1_shopInfo_line'></view>
 
-    <view class='part1_operationForCommpany' hidden='{{!select.isOverView}}'>
+    <view class='part1_operationForCommpany' >
       <view class='part1_operationForCommpany_claim'>
-        <button class='part1_operationForCommpany_btn'>认证公司</button>
+         <image class='part1_operationForCommpany_claim_img' src='../image/home_verty.jpg'></image> 
+        <view class='part1_operationForCommpany_claim_line'></view> 
       </view>
       <view class='part1_operationForCommpany_follow'>
         <button class='part1_operationForCommpany_btn'>+关注</button>
       </view>
       <view class='part1_operationForCommpany_share'>
-        <button class='part1_operationForCommpany_btn'>分享公司</button>
+         <view class='part1_operationForCommpany_share_line'></view>  
+         <image class='part1_operationForCommpany_share_img' src='../image/home_share.jpg'></image>  
       </view>
     </view>
 
     <view class='part1_select'>
-      <view class='part1_select_overview'>
-        <button class='part1_select_btn' bindtap='btnClick_overview'>概览</button>
+      <view class='part1_select_overview' bindtap='btnClick_overview'>
+        <view class='part1_select_btn'  style='color:{{select.btnColor_overView}}'>概览</view>
         <view class='part1_select_markView' hidden='{{!select.isOverView}}'></view>
       </view>
-      <view class='part1_select_news'>
-        <button class='part1_select_btn' bindtap='btnClick_news'>新闻</button>
+      <view class='part1_select_news' bindtap='btnClick_news'>
+        <view class='part1_select_btn' style='color:{{select.btnColor_news}}'>新闻</view>
         <view class='part1_select_markView' hidden='{{!select.isNews}}'></view>
       </view>
-      <view class='part1_select_community'>
-        <button class='part1_select_btn' bindtap='btnClick_community'>社区</button>
+      <view class='part1_select_community' bindtap='btnClick_community'>
+        <view class='part1_select_btn' style='color:{{select.btnColor_community}}'>社区</view>
         <view class='part1_select_markView' hidden='{{!select.isCommunity}}'></view>
       </view>
     </view>
+    <view class='part1_bottomLine'></view>
 
   </view>
 
@@ -56,4 +65,4 @@
     <news hidden="{{!select.isNews}}"></news>
     <community hidden="{{!select.isCommunity}}"></community>
   </view>
-</view>
+<!-- </view> -->

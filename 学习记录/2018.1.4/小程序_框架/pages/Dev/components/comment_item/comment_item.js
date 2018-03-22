@@ -27,7 +27,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    imgSrc_comment_reply:'../image/comment_reply.png'
   },
 
   /**

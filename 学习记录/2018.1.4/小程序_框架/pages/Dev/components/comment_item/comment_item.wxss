@@ -8,12 +8,12 @@
   display: flex; 
   justify-content: center;
   background: white;
-  width: 130rpx;
+  width: 123rpx;
 }
 .comment_item_portrait_img{
-  height: 80rpx;
-  width: 80rpx;
-  margin-top: 20rpx;
+  height: 66rpx;
+  width: 66rpx;
+  margin-top: 22rpx;
   border-radius: 50%;
   background: blue;
 }
@@ -21,47 +21,66 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin-left: 20rpx;
-  margin-right: 12rpx;
+  margin-left: 0rpx;
+  margin-right: 35rpx;
 }
 .comment_item_section_nameAndBtn{
   display: flex;
+  right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  flex: 1;
   flex-direction: row;
 }
-.comment_item_section_nameAndBtn_name{
-  padding-top: 30rpx;
-  font-size: 10pt;
-  color: blue;
+.comment_item_section_nameAndBtn_combine{
+  margin-left: 0rpx;
+  margin-right: 0rpx;
+  flex: 1;
 }
-.comment_item_section_nameAndBtn_btn{
-  width: 80rpx;
-  height: 60rpx;
-  margin-right: 20rpx;
-  margin-top: 10rpx;
-  padding-left: 10rpx;
-  padding-right: 10rpx;
+.comment_item_section_nameAndBtn_name{
+  flex: 1;
+  padding-top: 20rpx;
+  font-size: 26rpx;
+  color: #14171A;
+}
+.comment_item_section_nameAndBtn_time{
+  padding-top: 15rpx;
+  font-size: 26rpx;
+  color: #AAB2C2;
+}
+ .comment_item_section_nameAndBtn_btn{
+  width: 100rpx;
+  height: 50rpx;
+  margin-right:0rpx;
+  margin-top: 30rpx;
+  padding-left: 0rpx;
+  padding-right: 0rpx; 
   font-size: 10pt;
+} 
+
+.comment_item_section_nameAndBtn_btn_img{
+  width: 38rpx;
+  height: 38rpx;
+  margin-left: 55rpx;
 }
 .comment_item_section_content{
   padding-top: 15rpx;
-  font-size: 12pt;
+  font-size: 30rpx;
+  color: #657086;
 }
-.comment_item_section_time{
-  padding-top: 15rpx;
-  font-size: 11pt;
-  color: gray;
-}
+
 .comment_item_section_replyList{
-  margin-top: 10rpx;
-  padding-top: 10rpx;
+  margin-top: 18rpx;
+  padding-top: -30rpx;
   padding-bottom: 20rpx;
-  background: lightgray;
+  background: #F5F5FA;
 }
 .comment_item_section_replyList_item{
   padding-top: 20rpx;
-  padding-left: 15rpx;
-  padding-right: 15rpx;
-  font-size: 11pt;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  font-size: 26rpx;
+  color: #657086;
 }
 
 .comment_item_line{
@@ -69,5 +88,5 @@
   margin-left: 15rpx;
   margin-right: 0rpx;
   height: 2rpx;
-  background: lightgray;
+  background: #F2F2F2;
 }

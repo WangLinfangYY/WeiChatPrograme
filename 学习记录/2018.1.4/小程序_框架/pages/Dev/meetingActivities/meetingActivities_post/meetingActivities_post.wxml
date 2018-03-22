@@ -1,21 +1,31 @@
 <!--pages/Dev/meetingActivities/meetingActivities_post/meetingActivities_post.wxml-->
 
-<view>
-  <view class='time'>
-    <view class='name'>活动时间：包含开始时间和截止时间</view>
-    <input class='time_input' bindinput='input_time'></input>
-  </view>
+<view class='bg'>
   <view class='title'>
-    <view class='name'>活动标题</view>
-    <input class='title_input' bindinput='input_title'></input>
+    <view class='name'>活动主题</view>
+    <input class='title_input' bindinput='input_title' placeholder='请输入活动主题'></input>
+  </view>
+  <view class='time'>
+    <view class='name'>活动时间</view>
+    <view class='time_input'>
+      <input class='time_input_start' bindtap ='input_time_start' placeholder='请选择开始时间' disabled='true' value='{{time_start}}'></input>
+       <image class='time_input_img' src='../image/calendar.png'></image> 
+      <view class='time_input_to'>至</view>
+      <input class='time_input_end' bindtap ='input_time_end' placeholder='请选择结束时间' disabled='true' value='{{time_end}}'></input>
+       <image class='time_input_img' src='../image/calendar.png'></image> 
+    </view>
   </view>
   <view class='place'>
     <view class='name'>活动地点</view>
-    <input class='place_input' bindinput='input_place'></input>
+    <input class='place_input' bindinput='input_place' placeholder='请输入活动地点'></input>
   </view>
   <view class='link'>
     <view class='name'>活动链接</view>
-    <input class='link_input' bindinput='input_link'></input>
+    <input class='link_input' bindinput='input_link' placeholder='请输入活动链接' hidden='{{isShowDatePicker}}'></input>
   </view>
-  <button class='btn_complete' bindtap='complete'>完成</button>
+  <button class='btn_complete' bindtap='complete'>发布</button>
 </view>
+
+ <view wx:if='{{isShowDatePicker}}'> 
+  <datePicker id="datePicker" bind:cancel='_cancel' bind:confirm='_confirm'></datePicker>
+ </view> 

@@ -1,52 +1,75 @@
 /* pages/Dev/tenderAndBid/tenderAndBid_post/tenderAndBid_post.wxss */
 
-.deadline{
-  margin-top: 30rpx;
-  padding-left: 20rpx;
-}
-.deadline_input{
-  margin-top: 10rpx;
-  padding-left: 20rpx;
-  padding-right: 20rpx;
-  border: 1px solid coral;
-  margin-right: 20rpx;
-  width: 60%;
-  height: 80rpx;
-  border-color: lightgrey;
+.title{
+  margin-top: 34rpx;
+  padding-left: 30rpx;
 }
 .name{
-  font-size: 12pt;
-}
-.title{
-  margin-top: 36rpx;
-  padding-left: 20rpx;
+  font-size: 30rpx;
+  color: #141711;
 }
 .title_input{
-  margin-top: 10rpx;
+  margin-top: 23rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border: 1px solid;
+  margin-right: 30rpx;
+  height: 88rpx;
+  border-color: #e1e3ed;
+  font-size: 26rpx;
+}
+.deadline{
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+}
+.deadline_inputAndBtnImg{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+.deadline_inputAndBtnImg_input{
+  margin-top: 23rpx;
   padding-left: 20rpx;
   padding-right: 20rpx;
   border: 1px solid coral;
-  margin-right: 20rpx;
-  height: 80rpx;
-  border-color: lightgrey;
+  width: 650rpx;
+  height: 88rpx;
+  border-color: #e1e3ed;
+  font-size: 26rpx;
+}
+.deadline_inputAndBtnImg_img{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 25rpx;
+  margin-left: -50rpx;
 }
 .content{
   margin-top: 36rpx;
-  padding-left: 20rpx;
-  margin-right: 0rpx; 
+  padding-left: 30rpx;
 }
 .content_textarea{
-  /* margin-right: 20rpx; */
+  margin-top: 23rpx;
+  width: 668rpx;
   padding-left: 20rpx;
   padding-top: 20rpx;
-  height: 300rpx;
-  width: 94%;
-  border: 1rpx solid coral;
-  border-color: lightgray;
+  height: 372rpx; 
+  /* height: 1rpx; */
+  border: 1rpx solid;
+  border-color: #e1e3ed;
+  font-size: 26rpx;
+}
+.btn_completeBG{
+  height: 86rpx;
+  margin-top: 163rpx;
+  margin-left: 130rpx;
+  margin-right: 130rpx;
+  border-radius: 43rpx;
+  background: #679cff;
+  color: white;
 }
 .btn_complete{
-  height: 80rpx;
-  margin-top: 100rpx;
-  margin-left: 50rpx;
-  margin-right: 50rpx;
+  color: white;
+  width: 200rpx;
+  height: 78rpx;
+  font-size: 26rpx;
 }

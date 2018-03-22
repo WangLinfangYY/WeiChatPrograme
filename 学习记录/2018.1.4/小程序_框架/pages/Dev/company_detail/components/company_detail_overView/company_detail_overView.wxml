@@ -5,24 +5,49 @@
   <view class='financeHistory'>
     <view class='financeHistory_title'>融资历史</view>
     <view class='financeHistory_detail'>
-      <view class='financeHistory_detail_time'>2017-07-12</view>
-      <view class='financeHistory_detail_des'>
-        <view class='financeHistory_detail_des_stageAndMoney'>
-          <view class='financeHistory_detail_des_stageAndMoney_stage'>Pre-A 轮</view>
-          <view class='financeHistory_detail_des_stageAndMoney_money'>数千万人民币</view>
-        </view>
-        <view class='financeHistory_detail_des_from'>·壁声创投</view>
+      <view class='financeHistory_detail_timeAndLevel'>
+        <view class='financeHistory_detail_timeAndLevel_time'>2017-07-12</view>
+        <view class='financeHistory_detail_timeAndLevel_level'>Pre-A 轮</view>
       </view>
+      <view class='financeHistory_detail_money'>数千万人民币</view>
+      <view class='financeHistory_detail_line'></view>
+      <view class='financeHistory_detail_from'>
+         <image class='financeHistory_detail_from_content_img' src='../../image/overView_from.png'></image> 
+        <view class='financeHistory_detail_from_content'>壁声创投</view>
+      </view>
+      
+      <!-- <view class='financeHistory_detail_des'>
+        <view class='financeHistory_detail_des_stageAndMoney'>
+        </view>
+        
+      </view> -->
     </view>
   </view>
+  
+  <!--团队  -->
+  <view class='team'>
+    <view class='team_title'>团队</view>
+    <scroll-view scroll-x class='team_content'>
+      <block wx:for="{{[1,2,3,4,5]}}">
+        <view class='team_content_item'>
+          <view class='team_content_item_person'>
+            <image class='team_content_item_person_img' src='../../image/tmp_head.png'></image>
+            <view class='team_content_item_person_nameAndJob'>
+              <view class='team_content_item_person_name'>万晓利</view>
+              <view class='team_content_item_person_job'>CEO</view>
+            </view> 
+          </view>
+          <view class='team_content_item_des'>1962年11月出生，中国籍，澳大利亚永久居留权，研究生学历，环境保护高级工程师、第四届环境保护机械标准化技术委员会委员。</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
   <!--公司信息  -->
   <view class='info'>
     <view class='info_title'>公司信息</view>
     <view class='info_content'>
-      <view class='info_content_nameAndContent'>
-        <view class='info_content_nameAndContent_name'>公司名称</view>
-        <view class='info_content_nameAndContent_conent'>杭州几禾科技有限公司</view>
-      </view>
+      <view class='info_content_companyName'>杭州几禾科技有限公司</view>
       <view class='info_content_nameAndContent'>
         <view class='info_content_nameAndContent_name'>纳税人识别号</view>
         <view class='info_content_nameAndContent_conent'>21124214NY211241</view>
@@ -41,53 +66,60 @@
       </view>
     </view>
   </view>
-  <!--团队  -->
-  <view class='team'>
-    <view class='team_title'>团队</view>
-    <scroll-view scroll-x class='team_content'>
-      <block wx:for="{{[1,2,3,4,5]}}">
-        <view class='team_content_item'>
-          <view class='team_content_item_person'>
-            <image class='team_content_item_person_img'></image>
-            <view class='team_content_item_person_name'>万晓利</view>
-            <view class='team_content_item_person_line'></view>
-            <view class='team_content_item_person_job'>CEO</view>
-          </view>
-          <view class='team_content_item_des'>1962年11月出生，中国籍，澳大利亚永久居留权，研究生学历，环境保护高级工程师、第四届环境保护机械标准化技术委员会委员。</view>
-        </view>
-      </block>
-    </scroll-view>
-  </view>
   <!--联系方式  -->
   <view class='contact'>
     <view class='contact_title'>联系方式</view>
 
     <view class='contact_section'>
       <view class='contact_section_item'>
-        <image class='contact_section_item_img'></image>
+         <view class='contact_section_item_mark'>
+          <view class='contact_section_item_mark_img'></view>
+          <view class='contact_section_item_mark_title'>网址</view>
+          <view class='contact_section_item_mark_line'></view>
+        </view> 
         <view class='contact_section_item_content'>www.guoxiaoqi.com</view>
       </view>
       <view class='contact_section_item'>
-        <image class='contact_section_item_img'></image>
+         <view class='contact_section_item_mark'>
+          <view class='contact_section_item_mark_img'></view>
+          <view class='contact_section_item_mark_title'>微博</view>
+          <view class='contact_section_item_mark_line'></view>
+        </view> 
         <view class='contact_section_item_content'>www.guoxiaoqi.com</view>
       </view>
       <view class='contact_section_item'>
-        <image class='contact_section_item_img'></image>
-        <view class='contact_section_item_content'>guoixaoqi</view>
-        <image class='contact_section_item_weChatImg'></image>
+         <view class='contact_section_item_mark'>
+          <view class='contact_section_item_mark_img'></view>
+          <view class='contact_section_item_mark_title'>微信</view>
+          <view class='contact_section_item_mark_line'></view>
+        </view> 
+        <view class='contact_section_item_content'>guoxiaoqi</view>
       </view>
       <view class='contact_section_item'>
-        <image class='contact_section_item_img'></image>
-        <view class='contact_section_item_content'>0571-89925117</view>
+         <view class='contact_section_item_mark'>
+          <view class='contact_section_item_mark_img'></view>
+          <view class='contact_section_item_mark_title'>电话</view>
+          <view class='contact_section_item_mark_line'></view>
+        </view> 
+        <view class='contact_section_item_content'>0571-90030232</view>
       </view>
       <view class='contact_section_item'>
-        <image class='contact_section_item_img'></image>
-        <view class='contact_section_item_content'>guxiaoqi@163.com</view>
+         <view class='contact_section_item_mark'>
+          <view class='contact_section_item_mark_img'></view>
+          <view class='contact_section_item_mark_title'>邮箱</view>
+          <view class='contact_section_item_mark_line'></view>
+        </view> 
+        <view class='contact_section_item_content'>guoxiaoqi@163.com</view>
       </view>
       <view class='contact_section_item'>
-        <image class='contact_section_item_img'></image>
-        <view class='contact_section_item_content'>浙江省杭州市拱墅区和睦路525号一层B050-B061工位</view>
+         <view class='contact_section_item_mark'>
+          <view class='contact_section_item_mark_img'></view>
+          <view class='contact_section_item_mark_title'>地址</view>
+          <view class='contact_section_item_mark_line'></view>
+        </view> 
+        <view class='contact_section_item_content'>浙江省杭州市拱墅区和睦路523号一层B050-B061号工位</view>
       </view>
+      
     </view>
 
   </view>

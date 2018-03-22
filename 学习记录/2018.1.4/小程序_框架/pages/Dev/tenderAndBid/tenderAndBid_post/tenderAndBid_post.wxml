@@ -1,16 +1,23 @@
 <!--pages/Dev/tenderAndBid/tenderAndBid_post/tenderAndBid_post.wxml-->
 <view>
-  <view class='deadline'>
-    <view class='name'>招标截止时间</view>
-    <input class='deadline_input' bindinput='input_deadline'></input>
-  </view>
   <view class='title'>
     <view class='name'>标题</view>
-    <input class='title_input' bindinput='input_title'></input>
+    <input class='title_input' bindinput='input_title'  placeholder='请输入标题'></input>
+  </view>
+  <view class='deadline'>
+    <view class='name'>投标截止时间</view>
+    <view class='deadline_inputAndBtnImg'>
+      <input class='deadline_inputAndBtnImg_input' bindinput='input_deadline' disabled='true'  placeholder='请选择截止时间' value='{{deadline}}' bindtap='showSeleDatePicker' ></input>
+    <image class='deadline_inputAndBtnImg_img' bindtap='showSeleDatePicker' src='../image/calendar.png'></image>
+    </view>
   </view>
   <view class='content'>
-    <view class='name'>招标内容</view>
-    <textarea class='content_textarea' bindinput='input_content'></textarea>
+    <view class='name'>投标内容</view>
+    <textarea class='content_textarea' bindinput='input_content' hidden='{{isShowDatePicker}}' placeholder='请输入内容'></textarea>
   </view>
-  <button class='btn_complete' bindtap='complete'>完成</button>
+  <button class='btn_completeBG' bindtap='complete'>完成</button>
 </view>
+
+ <view wx:if="{{isShowDatePicker}}"> 
+  <datePicker id="datePicker" bind:cancel='_cancel' bind:confirm='_confirm'></datePicker>
+ </view> 

@@ -1,94 +1,101 @@
 .title{
-  padding-left: 20rpx;
-  padding-top: 20rpx;
-  font-size: 12pt;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 10rpx;
+  flex: 1;
+  font-size: 34rpx;
+  color: #14171A;
 }
 .deadline{
-  padding-left: 20rpx;
-  padding-top: 20rpx;
-  font-size: 11pt;
+  margin-left: 30rpx;
+  margin-top: 16rpx;
+  font-size: 26rpx;
+  color: #AAB2C2;
 }
 .shopInfo{
   display: flex;
   flex-direction: row;
-  margin-left: 15rpx;
-  margin-right: 15rpx;
-  margin-top: 15rpx;
-  padding-bottom: 20rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 36rpx;
+  padding-bottom: 38rpx;
   border: 1px solid lightgrey;
   border-radius: 10rpx;
 }
 .shopInfo_logo{
-  padding-left: 20rpx;
-  padding-top: 30rpx;
+  padding-left: 30rpx;
+  padding-top: 43rpx;
   padding-right: 20rpx;
 }
 .shopInfo_logo_img{
-  width: 100rpx;
-  height: 100rpx;
-  background: blue;
+  width: 115rpx;
+  height: 115rpx;
   border-radius: 50%;
 }
-.shopInfo_titleAndMark{
+.shopInfo_Item{
   display: flex;
   flex-direction: column;
+  margin-left: 29rpx;
 }
-.shopInfo_titleAndMark_title{
-  padding-top: 30rpx;
-  font-size: 13pt;
-}
-.shopInfo_titleAndMark_mark{
+.shopInfo_Item_nameAndLevel{
   display: flex;
   flex-direction: row;
-  padding-top: 30rpx;
+  margin-top: 38rpx;
 }
-.shopInfo_titleAndMark_mark_img{
-  width: 30rpx;
-  height: 30rpx;
-  margin-top: 10rpx;
-  background: blue;
+.shopInfo_Item_nameAndLevel_name{
+  font-size: 26rpx;
+  color: #14171A;
 }
-.shopInfo_titleAndMark_mark_content{
-  margin-left: 10rpx;
-  width: 370rpx;
-  font-size: 12pt;
+.shopInfo_Item_nameAndLevel_level{
+  margin-left: 29rpx;
+  font-size: 26rpx;
+  color: #679cff;
 }
-.shopInfo_line{
-  margin-right: 0rpx;
-  margin-top: 20rpx;
-  margin-bottom: 0rpx;
-  width: 1rpx;
-  background: lightgray;
+.shopInfo_Item_content{
+  margin-top: 13rpx;
+  font-size: 22rpx;
+  color: #657086;
 }
+
 .shopInfo_des{
   display: flex;
   flex: 1;
-  flex-direction: column;
   align-items: center;
-  padding-bottom: 20rpx;
-  width: 130rpx;
+  flex-direction: row;
+  margin-top: 23rpx;
+  font-size: 24rpx;
+  color: #657086;
 }
-.shopInfo_des_item{
-  margin-top: 20rpx;
-  font-size: 12pt;
+.shopInfo_des_mark_zhiShu{
+  width: 26rpx;
+  height: 26rpx;
 }
 .shopInfo_des_zhiShu{
-  margin-top: 15rpx;
-  font-size: 11pt;
-  color: blue;
+  margin-left: 10rpx;
+}
+.shopInfo_des_mark_reDu{
+  margin-left: 46rpx;
+  width: 26rpx;
+  height: 26rpx;
 }
 .shopInfo_des_reDu{
-  margin-top: 15rpx;
-  font-size: 11pt;
-  color: red;
+  margin-left: 15rpx;
 }
 
 .shopDes{
   padding-left: 30rpx;
+  padding-top: -13rpx;
+  padding-right: 30rpx;
+}
+.shopDes_content_title{
+  margin-top: 36rpx;
+  font-size: 30rpx;
+  color: #14171A;
 }
 .shopDes_content{
-  padding-top: 20rpx;
-  font-size: 12pt;
+  margin-top: 14rpx;
+  font-size: 28rpx;
+  color: #657086;
 }
 .shopDes_situation{
   margin-top: 20rpx;
@@ -101,17 +108,17 @@
 }
 
 .seperateLine{
-  margin-top: 30rpx;
+  margin-top: 27rpx;
   width: 100%;
-  height: 5rpx;
-  background: lightgray;
+  height: 30rpx;
+  background: #F5F6F8;
 }
 
 .comment_list{
   margin-top: 1rpx;
   padding-bottom: 20rpx;
 }
-.comment_item{
+/* .comment_item{
   display: flex;
   flex-direction: row;
 }
@@ -181,4 +188,4 @@
   margin-right: 0rpx;
   height: 2rpx;
   background: lightgray;
-}
+} */

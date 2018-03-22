@@ -1,94 +1,96 @@
 /* pages/Dev/company_detail/components/company_detail_overView/company_detail_overView.wxss */
 
 .description{
-  margin-left: 20rpx;
-  margin-right: 20rpx;
-  padding: 20rpx;
+  margin-left: 0rpx;
+  margin-right: 0rpx;
+  padding-top: 24rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-bottom: 30rpx;
   background: white;
-  font-size: 12pt;
-  border-radius: 10rpx;
+  font-size: 26rpx;
+  color: #657086;
 }
 
 .financeHistory{
   display: flex;
   flex-direction: column;
-  margin-top: 30rpx;
+  margin-top: 20rpx;
+  padding-top: 19rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-bottom: 44rpx;
+  background: white;
 }
 .financeHistory_title{
-  margin-left: 20rpx;
-  font-size: 12pt;
+  font-size: 30rpx;
+  color: #141711;
 }
 .financeHistory_detail{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 10rpx;
-  margin-left: 20rpx;
-  margin-right: 20rpx;
+  margin-left: 0rpx;
+  margin-right:0rpx;
   padding:20rpx;
   background: white;
-  border-radius: 10rpx;
+  border: 1rpx solid #E1E3ED;
 }
-.financeHistory_detail_time{
-  font-size: 12pt;
-}
-.financeHistory_detail_des{
-  margin-left: 20rpx;
-}
-.financeHistory_detail_des_stageAndMoney{
+.financeHistory_detail_timeAndLevel{
   display: flex;
   flex-direction: row;
+  flex: 1; 
+  align-content: space-between;
+  align-items: center;
 }
-.financeHistory_detail_des_stageAndMoney_stage{
-  font-size: 12pt;
-}
-.financeHistory_detail_des_stageAndMoney_money{
-  margin-left: 20rpx;
-  font-size: 12pt;
-}
-.financeHistory_detail_des_from{
-  margin-top: 15rpx;
-  font-size: 12pt;
-  color: gray;
+.financeHistory_detail_timeAndLevel_time{
+  font-size: 30rpx;
+  color: #14171A;
 }
 
-.info{
-  margin-top: 30rpx;
+.financeHistory_detail_timeAndLevel_level{
+  margin-left: 350rpx;
+  font-size: 26rpx;
+  color: #679CFF;
 }
-.info_title{
-  margin-left: 20rpx;
-  font-size: 12pt;
+.financeHistory_detail_money{
+  margin-top: 22rpx;
+  font-size: 22rpx;
+  color: #657086;
 }
-.info_content{
-  margin-left: 20rpx;
-  margin-right: 20rpx;
-  margin-top: 10rpx;
-  padding-left: 20rpx;
-  padding-right: 20rpx;
-  padding-top: 20rpx;
-  padding-bottom: 20rpx;
-  border-radius: 10rpx;
-  background: white;
+.financeHistory_detail_line{
+  margin-top: 23rpx;
+  margin-left: -10rpx;
+  margin-right: -20rpx;
+  height: 2rpx;
+  background: #f2f2f2;
 }
-.info_content_nameAndContent{
+.financeHistory_detail_from{
   display: flex;
   flex-direction: row;
   margin-top: 20rpx;
 }
-.info_content_nameAndContent_name{
-  font-size: 12pt;
-  color: gray;
+.financeHistory_detail_from_content_img{
+  width: 30rpx;
+  height: 30rpx;
 }
-.info_content_nameAndContent_conent{
-  margin-left: 20rpx;
-  font-size: 12pt;
+.financeHistory_detail_from_content{
+  margin-left: 24rpx;
+  font-size: 26rpx;
+  color: #657086;
 }
 
 .team{
-  margin-top: 30rpx;
+  margin-top: 20rpx;
+  background: white;
+  padding-top: 19rpx; 
+  padding-bottom: 35rpx;
 }
 .team_title{
-  margin-left: 20rpx;
-  font-size: 12pt;
+  margin-left: 30rpx;
+  /* margin-top: 19rpx; */
+  font-size: 30rpx;
+  color: #141711;
 }
 .team_content{
   margin-top: 10rpx;
@@ -102,50 +104,50 @@
   display: inline-block;
   flex-direction: row; 
   flex-wrap: wrap;  
-  margin-top: 35rpx;
+  margin-top: 28rpx;
   margin-left: 10rpx;
   margin-right: 10rpx;
   padding-bottom: 10rpx;
   width: 500rpx;
   /* height: 220rpx;   */
   border-radius: 10rpx;
-  background: white;
+  background: #F8F8F8;
 }
 .team_content_item_person{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .team_content_item_person_img{
   margin-left: 20rpx;
-  margin-top: -30rpx;
-  width: 80rpx;
-  height: 80rpx;
+  margin-top: 20rpx;
+  width: 94rpx;
+  height: 94rpx;
   border-radius: 50%;
-  background: blue;
+}
+
+.team_content_item_person_nameAndJob{
+  margin-left: 34rpx;
 }
 .team_content_item_person_name{
-  margin-left: 20rpx;
-  margin-top: 10rpx;
-  font-size: 12pt;
-}
-.team_content_item_person_line{
-  margin-left: 20rpx;
-  width: 2rpx;
-  margin-top: 10rpx;
-  background: black;
+  margin-top: 22rpx;
+  font-size: 30rpx;
+  color: #14171A;
 }
 .team_content_item_person_job{
-  margin-left: 20rpx;
   margin-top: 10rpx;
-  font-size: 12pt;
+  font-size: 26rpx;
+  color: #657086;
 }
  .team_content_item_des{
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
+  margin-top: 10rpx; 
   margin-left: 20rpx;
   margin-right: 20rpx;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 12pt;
+  font-size: 26rpx;
+  color: #657086;
 } 
 /* .team_content_item_des{
   display: -webkit-box;
@@ -156,43 +158,100 @@
   text-overflow: ellipsis;
   word-break: break-all;
 } */
-
-.contact{
-  margin-top: 30rpx;
+.info{
+  margin-top: 20rpx;
+  background: white;
+  padding-left: 30rpx;
+  padding-top: 19rpx;
+  padding-bottom: 30rpx;
 }
-.contact_title{
-  margin-left: 20rpx;
+.info_title{
   font-size: 12pt;
 }
+.info_content{
+  margin-right: 30rpx;
+  margin-top: 36rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 17rpx;
+  padding-bottom: 20rpx;
+  border: 1px solid #cfcfcf;
+  background: white;
+}
+.info_content_companyName{
+  font-size: 30rpx;
+  color: #14171a;
+}
+.info_content_nameAndContent{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.info_content_nameAndContent_name{
+  font-size: 24rpx;
+  color: #657086;
+}
+.info_content_nameAndContent_conent{
+  margin-left: 24rpx;
+  font-size: 24rpx;
+  color: #657086;
+}
+
+
+
+.contact{
+  margin-top: 20rpx;
+  background: white;
+  padding-left: 30rpx;
+  padding-top: 25rpx;
+  padding-bottom: 30rpx;
+}
+.contact_title{
+  font-size: 30rpx;
+  color: #14171A;
+}
 .contact_section{
-  margin-top: 10rpx;
-  margin-left: 20rpx;
-  margin-right: 20rpx;
+  margin-top: 27rpx;
+  margin-right: 30rpx;
   padding-top: 10rpx;
   padding-bottom: 20rpx;
   border-radius: 10rpx;
   background: white;
+  box-shadow: 0 0 22rpx 0 #E8E8E8; 
 }
-.contact_section_item{
+ .contact_section_item{
   display: flex;
-  align-items: center;
-  margin-top: 20rpx;
+  flex-direction: column;
+  margin-top: 10rpx;
+}  
+ .contact_section_item_mark{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+} 
+.contact_section_item_mark_img{
+  margin-left: 50rpx;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #679cff;
 }
-.contact_section_item_img{
-  margin-left: 20rpx;
-  width: 50rpx;
-  height: 50rpx;
-  background: blue;
+.contact_section_item_mark_title{
+  margin-left: 10rpx;
+  font-size: 26rpx;
+  color: #14171a;
+}
+.contact_section_item_mark_line{
+  margin-left: 40rpx;
+  margin-right: 50rpx;
+  width: 478rpx;
+  flex: 1;
+  height: 1rpx;
+  background: #E1E3ED;
 }
 .contact_section_item_content{
-  margin-left: 20rpx;
-  margin-right: 20rpx;
-  font-size: 12pt;
-  flex: 1;
-}
-.contact_section_item_weChatImg{
-  margin-right: 20rpx;
-  width: 80rpx;
-  height: 80rpx;
-  background: blue;
+  margin-top: 10rpx;
+  margin-left: 72rpx;
+  font-size: 24rpx;
+  color: #657086;
 }

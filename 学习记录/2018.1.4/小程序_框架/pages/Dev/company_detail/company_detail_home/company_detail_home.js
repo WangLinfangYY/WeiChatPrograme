@@ -15,6 +15,9 @@ Page({
       isOverView:true,
       isNews:false,
       isCommunity:false,
+      btnColor_overView:"#679CFF",
+      btnColor_news:"#141711",
+      btnColor_community:"#141711",
     },
   },
   btnClick_overview:function(){
@@ -23,6 +26,9 @@ Page({
         isOverView: true,
         isNews: false,
         isCommunity: false,
+        btnColor_overView: "#679CFF",
+        btnColor_news: "#141711",
+        btnColor_community: "#141711",
       }
     });
   },
@@ -32,6 +38,9 @@ Page({
         isOverView: false,
         isNews: true,
         isCommunity: false,
+        btnColor_overView: "#141711",
+        btnColor_news: "#679CFF",
+        btnColor_community: "#141711",
       }
     });
   },
@@ -41,6 +50,9 @@ Page({
         isOverView: false,
         isNews: false,
         isCommunity: true,
+        btnColor_overView: "#141711",
+        btnColor_news: "#141711",
+        btnColor_community: "#679CFF",
       }
     });
   },

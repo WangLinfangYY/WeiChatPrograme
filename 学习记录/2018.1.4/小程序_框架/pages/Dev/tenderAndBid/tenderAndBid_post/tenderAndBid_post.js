@@ -1,6 +1,7 @@
 // pages/Dev/tenderAndBid/tenderAndBid_post/tenderAndBid_post.js
 
 var delegate;
+var _datePicker;
 Page({
 
   /**
@@ -10,6 +11,7 @@ Page({
     deadline:'',
     title:'',
     content:'',
+    isShowDatePicker:false,
   },
   input_deadline:function(e){
     this.setData({
@@ -26,6 +28,30 @@ Page({
       content: e.detail.value,
     })
   },
+  showSeleDatePicker:function(){
+    this.setData({
+      isShowDatePicker: !this.data.isShowDatePicker,
+    });
+    _datePicker = this.selectComponent("#datePicker");
+  },
+  /**
+   * 取消
+   */
+  _cancel:function(){
+    this.showSeleDatePicker()
+  },
+  /**
+   * 完成选择
+   */
+  _confirm:function(){
+    this.setData({
+      deadline: _datePicker.data.year + '-' + _datePicker.data.month + '-' + _datePicker.data.day
+    });
+    this.showSeleDatePicker()
+  },
+  /**
+   * 提交
+   */
   complete:function(){
     if(!this.data.title||!this.data.deadline||!this.data.content){
       wx.showModal({
@@ -65,7 +91,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
   },
 
   /**

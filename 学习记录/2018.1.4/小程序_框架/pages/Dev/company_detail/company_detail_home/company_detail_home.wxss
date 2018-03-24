@@ -198,9 +198,9 @@
 
 .part2{
   margin-top: 0rpx;
-  padding-bottom: 20rpx;
+  /* padding-bottom: 20rpx; */
 }
 
 page{
-  background: #ECEEF3;
+  background: #F5F6F8;
 }

@@ -1,28 +1,31 @@
 <view>
-  <view class='title'>{{item.name}}{{item.content}}</view>
-  <view class='deadline'>截止时间：{{item.deadline}}</view>
+  <view class='title'>{{item.title}}</view>
+  <view class='deadline'>截止时间：{{item.tenderTime}}</view>
 
-  <view class='shopInfo'>
-    <view class='shopInfo_logo'>
-      <image class='shopInfo_logo_img' src='../image/tmp_head.png'></image>
-    </view>
-    <view class='shopInfo_Item'>
-      <view class='shopInfo_Item_nameAndLevel'>
-        <view class='shopInfo_Item_nameAndLevel_name'>{{item.name}}</view>
-        <view class='shopInfo_Item_nameAndLevel_level'>Pre-A</view>
+  <view class='shopInfo_bg'>
+    <view class='shopInfo'>
+      <view class='shopInfo_logo'>
+        <image class='shopInfo_logo_img' src='{{item.companyLogo}}'></image>
       </view>
-      <view class='shopInfo_Item_content'>办公室，常温零食</view>
-      <view class='shopInfo_des'> 
-        <image class='shopInfo_des_mark_zhiShu' src='../image/zhiShu.png'></image>
-        <view class='shopInfo_des_zhiShu'>123124</view>
-        <image class='shopInfo_des_mark_reDu' src='../image/reDu.png'></image>
-        <view class='shopInfo_des_reDu'>123456</view>
+      <view class='shopInfo_Item'>
+        <view class='shopInfo_Item_nameAndLevel'>
+          <view class='shopInfo_Item_nameAndLevel_name'>{{item.companyName}}</view>
+          <view class='shopInfo_Item_nameAndLevel_level'>{{item.finance}}</view>
+        </view>
+        <view class='shopInfo_Item_content'>{{item.tags}}</view>
+        <view class='shopInfo_des'>
+          <image class='shopInfo_des_mark_zhiShu' src='../image/zhiShu.png'></image>
+          <view class='shopInfo_des_zhiShu'>{{item.pintuIndex}}</view>
+          <image class='shopInfo_des_mark_reDu' src='../image/reDu.png'></image>
+          <view class='shopInfo_des_reDu'>{{item.hotIndex}}</view>
+        </view>
       </view>
     </view>
   </view>
 
+
   <view class='shopDes'>
-    <view class='shopDes_situation'>
+    <!-- <view class='shopDes_situation'>
       <view class='shopDes_content_title'>招标状况：</view>
       <view class='shopDes_content'>果小7是一家便利货架提供商，定位于楼宇场景，主要做常温零食和水果，专注于为白领群体提供鲜果服务，微信公众号为B端、C端用户提供定水果服务，C端用户提供定水果服务</view>
     </view>
@@ -34,15 +37,16 @@
       <view class='shopDes_content_title'>联系方式：</view>
       <view class='shopDes_content'>电话：123456789</view>
       <view class='shopDes_content'>邮箱：guoxiaoqi@pintu360.com</view>
-    </view>
+    </view> -->
+     <view class='shopDes_content'>{{item.content}}</view> 
   </view>
 
-  <view class='seperateLine'></view>
+  <!-- <view class='seperateLine'></view> -->
   <view class='comment_list'>
-    <block wx:for="{{arr_dataSource}}">
+    <block wx:for="{{item.commentList}}">
 
-       <comment_item item = "{{item}}" hideLine="{{index==arr_dataSource.length-1}}" bind:showCommentDetail = "_showCommentDetail" data-detailSource='{{item}}' data-index='{{index}}'>
-       </comment_item>
+      <comment_item item="{{item}}" hideLine="{{index==arr_dataSource.length-1}}" bind:showCommentDetail="_showCommentDetail" data-detailSource='{{item}}' data-index='{{index}}'>
+      </comment_item>
 
     </block>
   </view>
@@ -53,4 +57,4 @@
 <!-- <import src='../../template/template'/>
 <template is = "addComment" data="{{...data_comment}}"/>  -->
 
- <addComment id="addComment" title = '点击添加评论' bind:sendComment="_sendComment" hideLine = "{{index==arr_dataSource.length-1}}"></addComment> 
+<addComment id="addComment" title='点击添加评论' bind:sendComment="_sendComment" hideLine="{{index==arr_dataSource.length-1}}"></addComment>

@@ -1,7 +1,10 @@
 
+
 var item;
 var arr_dataSource;
 var _addCommentTool;
+var util = require('../../common/util.js');
+var that;
 Page({
 
   /**
@@ -62,9 +65,15 @@ Page({
    */
   onLoad: function (options) {
     item = JSON.parse(options.item)
-    this.setData({
-      item:item
-    })
+    that = this;
+    util.community_getTenderBbsDetail(item.id,function(res){
+      console.log(res);
+      if(res.data.success){
+        that.setData({
+          item:res.data.value,
+        });
+      }
+    });
   },
 
   /**

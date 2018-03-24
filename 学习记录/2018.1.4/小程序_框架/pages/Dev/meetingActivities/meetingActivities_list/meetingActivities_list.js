@@ -1,4 +1,7 @@
 // pages/Dev/meetingActivities/meetingActivities_list/meetingActivities_list.js
+
+var util = require('../../common/util.js');
+var that;
 Page({
 
   /**
@@ -22,7 +25,18 @@ Page({
       }
     ]
   },
-
+/**
+ * 搜索
+ */
+  search:function(e){
+    util.community_queryActivityBbsListByTitle(1, e.detail.value,function(res){
+      if (res.data.success){
+        that.setData({
+          arr_dataSource: res.data.value.data,
+        });
+      }
+    })
+  },
   post:function(){
     wx.navigateTo({
       url: '../meetingActivities_post/meetingActivities_post',
@@ -32,7 +46,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    that = this;
+    wx.showLoading({
+      title: '正在加载数据',
+    })
+    util.community_queryActivityBbsList(1,function(res){
+      wx.hideLoading();
+      console.log(res);
+      if(res.data.success){
+        that.setData({
+          arr_dataSource:res.data.value.data,
+        });
+      }
+    });
   },
 
   /**

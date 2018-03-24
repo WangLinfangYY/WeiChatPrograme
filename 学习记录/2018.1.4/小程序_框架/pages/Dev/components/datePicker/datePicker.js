@@ -1,13 +1,16 @@
 // pages/Dev/components/datePicker/datePicker.js
 
 
-const date = new Date()
+var date = new Date()
 const years = []
 var months = []
 var days = []
 var currentYear = date.getFullYear()
 var currentMonth = date.getMonth()+1
 var currentDay = date.getDate()
+var currentHour = date.getHours()
+var currentMinute = date.getMinutes()
+var currentSecond = date.getSeconds()
 
 for (let i = 0; i <= 20; i++) {
   years.push(i + date.getFullYear())
@@ -48,6 +51,9 @@ Component({
     day: currentDay,
     year: date.getFullYear(),
     value: [0, currentMonth-1, currentDay-1],
+    h:currentHour,
+    m:currentMinute,
+    s:currentSecond,
   },
 
   /**
@@ -72,6 +78,12 @@ Component({
      * 完成选择
      */
     _confirm:function(){
+      date = new Date()
+      this.setData({
+        h:date.getHours(),
+        m:date.getMinutes(),
+        s:date.getSeconds(),
+      })
       this.triggerEvent("confirm")
     }
   }

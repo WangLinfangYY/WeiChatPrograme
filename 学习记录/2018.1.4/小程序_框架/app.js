@@ -34,6 +34,10 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    // userInfo: null,
+    baseURL:'http://172.17.28.68:8080/pinturetail-api/',
+    userInfo:{
+      userId:'user4',
+    }
   }
 })

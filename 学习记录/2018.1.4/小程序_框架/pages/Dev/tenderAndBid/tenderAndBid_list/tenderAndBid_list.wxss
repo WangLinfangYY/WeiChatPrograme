@@ -28,7 +28,7 @@
   background: #E1E3ED;
 }
 .searchAndPost_post{
-  width: 200rpx;
+  width: 125rpx;
   padding-left:52rpx; 
   font-size: 30rpx;
 }

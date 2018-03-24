@@ -1,3 +1,7 @@
+
+
+var util = require('../../common/util.js')
+var that;
 Page({
 
   /**
@@ -5,28 +9,22 @@ Page({
    */
   data: {
     imgSrc_outOfData:'../image/mark_outOfDate.png',
-    arr_dataSource:[
-      {
-        name: '果小7',
-        content: '办公室常温零食供应商招标',
-        deadline: '12月20日',
-        isOutOfDate:false,
-      },
-      {
-        name: '猩便利',
-        content: '办公室食品派送招标',
-        deadline: '12月20日',
-        isOutOfDate: false,
-      },
-      {
-        name: '盒马鲜生',
-        content: '北京地区面包蟹生鲜供应商',
-        deadline: '1月20日',
-        isOutOfDate: true
-      }
-    ]
+    arr_dataSource:[]
   },
 
+  /**
+   * 搜索
+   */
+  search:function(e){
+    console.log(e.detail.value);
+    util.community_queryTenderBbsListByTitle(1, e.detail.value,function(res){
+      if (res.data.success) {
+        that.setData({
+          arr_dataSource: res.data.value.data,
+        });
+      }
+    });
+  },
   showDetail:function(e){
     wx.navigateTo({
       url: '../tenderAndBid_detail/tenderAndBid_detail?item='+JSON.stringify(e.currentTarget.dataset.item),
@@ -42,7 +40,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    that = this;
+    wx.showLoading({
+      title: '正在加载数据',
+    });
+    util.community_queryTenderBbsList(1,function(res){
+      console.log(res);
+      wx.hideLoading();
+      if (res.data.success){
+        that.setData({
+          arr_dataSource:res.data.value.data,
+        });
+      }
+    })
   },
 
   /**

@@ -1,7 +1,7 @@
 /* pages/Dev/components/datePicker/datePicker.wxss */
 
 .bg{
-  height: 618rpx;
+  height: 560rpx;
   background: whitesmoke;
   bottom: 0;
   position: fixed;   

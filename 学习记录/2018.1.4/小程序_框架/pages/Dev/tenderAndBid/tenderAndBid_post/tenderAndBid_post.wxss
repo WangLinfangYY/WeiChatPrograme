@@ -66,10 +66,12 @@
   border-radius: 43rpx;
   background: #679cff;
   color: white;
+  box-shadow:0 2px 14px 0 #8eb5ff;
 }
 .btn_complete{
   color: white;
   width: 200rpx;
   height: 78rpx;
   font-size: 26rpx;
+  box-shadow:0 2px 14px 0 #8eb5ff;
 }

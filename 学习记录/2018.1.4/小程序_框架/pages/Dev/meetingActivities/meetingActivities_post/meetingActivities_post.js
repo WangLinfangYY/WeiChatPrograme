@@ -2,6 +2,9 @@
 
 var delegate;
 var datePicker;
+var util = require('../../common/util.js');
+var that;
+var userId = getApp().globalData.userInfo.userId;
 Page({
 
   /**
@@ -54,12 +57,12 @@ Page({
   _confirm:function(){
     if (this.data.isSelectTimeForStart){
       this.setData({
-        time_start:datePicker.data.year + '-' + datePicker.data.month + '-' + datePicker.data.day,
+        time_start: datePicker.data.year + '-' + datePicker.data.month + '-' + datePicker.data.day + ' ' + datePicker.data.h + ':' + datePicker.data.m + ':' + datePicker.data.s,
         isShowDatePicker:false,
       })
     }else{
       this.setData({
-        time_end: datePicker.data.year + '-' + datePicker.data.month + '-' + datePicker.data.day,
+        time_end: datePicker.data.year + '-' + datePicker.data.month + '-' + datePicker.data.day + ' ' + datePicker.data.h + ':' + datePicker.data.m + ':' + datePicker.data.s,
         isShowDatePicker: false,
       })
     }
@@ -75,6 +78,7 @@ Page({
       })
       return;
     }
+    /*
     delegate.data.arr_dataSource = [{
       name: "品途N号",
       title: this.data.title,
@@ -85,14 +89,26 @@ Page({
     delegate.setData({
       arr_dataSource: delegate.data.arr_dataSource,
     });
-    wx.navigateBack({
+    */
+    util.community_postActivityBbs(that.data.time_start +'至'+ that.data.time_end, that.data.title, that.data.place, that.data.link,userId,function(res){
+      console.log(res);
+      if (res.data.success){
+        wx.showModal({
+          title: '',
+          content: '发布成功',
+        })
+      wx.navigateBack({
+      });
+      }
     });
+    
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     var pages = getCurrentPages();
+    that = this;
     delegate = pages[pages.length - 2];
   },
 

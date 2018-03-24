@@ -1,6 +1,6 @@
 /* pages/Dev/company_detail/components/company_detail_news/company_detail_news.wxss */
 .achievement{
-  padding-bottom: 20rpx;
+  /* padding-bottom: 20rpx; */
   background: white;
 }
 .achievement_item{

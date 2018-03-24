@@ -1,6 +1,6 @@
 <view class='searchAndPost'>
   <image class='searchAndPost_image' src='../image/mark_search.png'></image>
-  <input class='searchAndPost_input' placeholder='搜索内容'></input>
+  <input class='searchAndPost_input' placeholder='搜索内容' bindinput='search'></input>
   <view class='searchAndPost_line'></view>
   <view class='searchAndPost_post' bindtap='post'>发帖</view>
 </view>
@@ -11,11 +11,11 @@
         <image class='item_portrait_img' src='../image/tmp_head.png'></image>
       </view>
       <view class='item_section'>
-        <view class='item_section_name'>{{item.name}}</view>
-        <view class='item_section_content'>{{item.content}}</view>
-        <view class='item_section_deadline'>截止日期：{{item.deadline}}</view>
+        <view class='item_section_name'>{{item.author}}</view>
+        <view class='item_section_content'>{{item.title}}</view>
+        <view class='item_section_deadline'>截止日期：{{item.tenderTime}}</view>
       </view>
-      <view class='item_outOfDate' hidden='{{!item.isOutOfDate}}'>
+      <view class='item_outOfDate' hidden='{{item.expire}}'>
         <image class='item_outOfDate_image' src='{{imgSrc_outOfData}}'></image>
       </view>
     </view>

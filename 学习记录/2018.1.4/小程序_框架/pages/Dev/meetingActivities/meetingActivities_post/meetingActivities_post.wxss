@@ -103,4 +103,5 @@
   background: #679cff;
   font-size: 26rpx;
   color: white;
+  box-shadow:0 2px 14px 0 #8eb5ff;
 }

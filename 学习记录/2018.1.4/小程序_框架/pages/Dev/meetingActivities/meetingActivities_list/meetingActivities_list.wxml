@@ -2,7 +2,7 @@
 
 <view class='searchAndPost'>
   <image class='searchAndPost_image' src='../image/mark_search.png'></image>
-  <input class='searchAndPost_input' placeholder='搜索内容'></input>
+  <input class='searchAndPost_input' placeholder='搜索内容' bindinput='search'></input>
   <view class='searchAndPost_line'></view>
   <view class='searchAndPost_post' bindtap='post'>发帖</view>
 </view>
@@ -10,12 +10,12 @@
   <block wx:for = "{{arr_dataSource}}">
     <view class='item'>
       <view class='item_title'>{{item.title}}</view>
-      <view class='item_time'>{{item.time_start}}至{{item.time_end}}</view>
-      <view class='item_place'>{{item.place}}</view>
+      <view class='item_time'>{{item.activityTime}}</view>
+      <view class='item_place'>{{item.address}}</view>
       <view class='itme_line'></view>
       <view class='item_portraitAndName'>
-        <image class='item_portraitAndName_img' src='../image/tmp_head.png'></image>
-        <view class='item_portraitAndName_name'>{{item.name}}</view>
+        <image class='item_portraitAndName_img' src='{{item.userPhoto}}'></image>
+        <view class='item_portraitAndName_name'>{{item.userNickName}}</view>
       </view>
     </view>
      

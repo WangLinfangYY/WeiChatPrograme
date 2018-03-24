@@ -1,7 +1,11 @@
 // pages/Dev/tenderAndBid/tenderAndBid_post/tenderAndBid_post.js
+var userId = getApp().globalData.userInfo.userId;
 
+var that;
 var delegate;
 var _datePicker;
+
+var util = require('../../common/util.js');
 Page({
 
   /**
@@ -45,7 +49,7 @@ Page({
    */
   _confirm:function(){
     this.setData({
-      deadline: _datePicker.data.year + '-' + _datePicker.data.month + '-' + _datePicker.data.day
+      deadline: _datePicker.data.year + '-' + _datePicker.data.month + '-' + _datePicker.data.day + ' ' + _datePicker.data.h + ':' + _datePicker.data.m + ':' + _datePicker.data.s
     });
     this.showSeleDatePicker()
   },
@@ -60,6 +64,13 @@ Page({
       })
       return;
     }
+    wx.showLoading({
+      title:'数据正在提交',
+    });
+    util.community_postTenderBbs(that.data.deadline, that.data.title, that.data.content, userId,function(res){
+      wx.hideLoading();
+    })
+    /*
     var item = {
       name: '果小8',
       content: this.data.content,
@@ -78,6 +89,7 @@ Page({
     wx.redirectTo({
       url: '../tenderAndBid_detail/tenderAndBid_detail?item=' + JSON.stringify(item),
     })();
+    */
   },
   /**
    * 生命周期函数--监听页面加载
@@ -85,6 +97,7 @@ Page({
   onLoad: function (options) {
     var pages = getCurrentPages();
     delegate = pages[pages.length - 2];
+    that = this;
   },
 
   /**

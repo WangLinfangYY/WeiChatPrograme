@@ -7,8 +7,8 @@
     <view class='comment_item_section'>
       <view class='comment_item_section_nameAndBtn'>
         <view class='comment_item_section_nameAndBtn_combine'>
-          <view class='comment_item_section_nameAndBtn_name'>{{item.name}}</view>
-          <view class='comment_item_section_nameAndBtn_time'>{{item.time}}</view>
+          <view class='comment_item_section_nameAndBtn_name'>{{item.userNickName}}</view>
+          <view class='comment_item_section_nameAndBtn_time'>{{item.publishTime}}</view>
         </view>
           <view class='comment_item_section_nameAndBtn_btn' bindtap='_showCommentDetail' hidden='{{hideReplyBtn}}' >
             <image class='comment_item_section_nameAndBtn_btn_img' src='{{imgSrc_comment_reply}}'></image>
@@ -16,7 +16,7 @@
       </view>
       <view class='comment_item_section_content'>{{item.content}}</view>
       <view class='comment_item_section_replyList' hidden='{{!item.itemCommenList.length}}'>
-        <block wx:for="{{item.itemCommenList}}">
+        <block wx:for="{{item.replyList}}">
           <view class='comment_item_section_replyList_item'>{{item.user}}：{{item.comment}}</view>
         </block>
       </view>

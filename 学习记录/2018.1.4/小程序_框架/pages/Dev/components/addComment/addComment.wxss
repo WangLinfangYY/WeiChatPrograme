@@ -3,10 +3,11 @@
 /*添加评论  */
 .btn_addComment_bg{
   height: 120rpx;
-  background: whitesmoke;
+  background: white;
   bottom: 0;
   position: fixed; 
   width: 100%;
+  box-shadow:0 -3rpx 11rpx 0;
 }
 .btn_addComment{
   top: 15rpx;
